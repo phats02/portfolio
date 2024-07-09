@@ -12,3 +12,7 @@ body {
 ::-webkit-scrollbar {
   scrollbar-width: 0px;
 }
+
+.will-change-opacity {
+  will-change: opacity;
+}
