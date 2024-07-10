@@ -10,9 +10,20 @@ body {
 }
 
 ::-webkit-scrollbar {
-  scrollbar-width: 0px;
+  width: 7px;
+  height: 3px;
 }
 
-.will-change-opacity {
-  will-change: opacity;
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #4b515b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5c636e;
 }

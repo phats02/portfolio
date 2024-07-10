@@ -17,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} relative min-h-screen overflow-x-hidden`}
+        className={`${inter.className} w-screen min-h-screen m-0 p-0 overflow-x-hidden flex flex-col items-center`}
       >
-        <main className="relative mx-auto mb-16 max-w-4xl px-8">
-          {children}
-        </main>
+        {/* <main className="relative mx-auto mb-16 max-w-4xl px-8"> */}
+        {children}
+        {/* </main> */}
       </body>
     </html>
   );
