@@ -23,7 +23,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectsInterface>(
         ref={ref}
       >
         <div className="overflow-hidden rounded-lg md:w-72">
-          <Link href={"/"}>
+          <Link href={`/projects/${id}`}>
             <div className="relative h-36 w-full transition duration-200 hover:opacity-60 md:h-full md:w-72">
               <NextImage
                 src={image}
@@ -37,7 +37,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectsInterface>(
         <div className="flex flex-1 flex-col justify-between">
           <div className="flex flex-col space-y-2">
             <Link
-              href={"/"}
+              href={`/projects/${id}`}
               className="transition duration-200 hover:opacity-60"
             >
               <h2 className="text-2xl font-bold">{title}</h2>
@@ -58,7 +58,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectsInterface>(
             </div>
           </div>
           <Link
-            href={"/"}
+            href={`/projects/${id}`}
             className="mt-4 gradient-underline inline-block relative"
           >
             <span>Learn More</span>
