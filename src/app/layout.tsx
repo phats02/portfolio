@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Josefin_Sans, Sen } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 
 export const sen = Sen({
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${sen.className} w-screen min-h-screen relative m-0 p-0 overflow-x-hidden flex flex-col items-center`}
       >
+        <Header />
         {children}
         <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
           <div className="absolute left-8 top-16 -z-10 overflow-visible opacity-20">

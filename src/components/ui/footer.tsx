@@ -7,6 +7,7 @@ const Footer = (): JSX.Element => {
       <div className="flex space-x-4">
         {socials.map((social) => (
           <a
+            key={social.id}
             href={social.url}
             aria-label={social.name}
             className="rounded-xl flex items-center justify-center shadow-md border-[1px] border-tertiary bg-secondary/30 cursor-pointer h-14 w-14 transition duration-200 hover:border-accent"
