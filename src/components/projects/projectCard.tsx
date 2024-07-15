@@ -8,6 +8,7 @@ import { cleanLink } from "@/utils/helpers";
 interface ProjectsInterface {
   id: number;
   title: string;
+  urlTitle: string;
   desc: string[];
   tech: string[];
   image: StaticImageData;
@@ -16,14 +17,17 @@ interface ProjectsInterface {
 }
 
 const ProjectCard = forwardRef<HTMLDivElement, ProjectsInterface>(
-  ({ id, title, desc, tech, image, link, githubLink }, ref): JSX.Element => {
+  (
+    { id, title, urlTitle, desc, tech, image, link, githubLink },
+    ref
+  ): JSX.Element => {
     return (
       <div
         className="flex flex-col space-y-8 rounded-xl border-[1px] border-tertiary bg-secondary/50 p-4 md:h-48 md:flex-row md:space-y-0 md:space-x-8"
         ref={ref}
       >
         <div className="overflow-hidden rounded-lg md:w-72">
-          <Link href={`/projects/${id}`}>
+          <Link href={`/projects/${urlTitle}`}>
             <div className="relative h-36 w-full transition duration-200 hover:opacity-60 md:h-full md:w-72">
               <NextImage
                 src={image}
@@ -37,7 +41,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectsInterface>(
         <div className="flex flex-1 flex-col justify-between">
           <div className="flex flex-col space-y-2">
             <Link
-              href={`/projects/${id}`}
+              href={`/projects/${urlTitle}`}
               className="transition duration-200 hover:opacity-60"
             >
               <h2 className="text-2xl font-bold">{title}</h2>
@@ -58,7 +62,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectsInterface>(
             </div>
           </div>
           <Link
-            href={`/projects/${id}`}
+            href={`/projects/${urlTitle}`}
             className="mt-4 gradient-underline inline-block relative"
           >
             <span>Learn More</span>

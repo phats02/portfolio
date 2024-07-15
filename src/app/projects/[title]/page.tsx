@@ -5,8 +5,8 @@ import { FaArrowRight, FaGithub } from "react-icons/fa";
 import { projects } from "@/assets/data/projects";
 import { getGitHubOwnerAndRepoFromLink } from "@/utils/helpers";
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = projects.find((p) => p.id === parseInt(params.id));
+export default function ProjectPage({ params }: { params: { title: string } }) {
+  const project = projects.find((p) => p.urlTitle === params.title);
 
   if (!project) {
     notFound();

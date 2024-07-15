@@ -3,6 +3,13 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import BreadcrumbItem from "./breadcrumbitem";
 
+const slugToReadable = (slug: string): string => {
+  return slug
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
+
 const Breadcrumb = (): JSX.Element => {
   const pathname = usePathname();
   const [breadcrumbs, setBreadcrumbs] = useState<
@@ -16,7 +23,7 @@ const Breadcrumb = (): JSX.Element => {
       const href = "/" + pathArray.slice(0, index + 1).join("/");
       return {
         href,
-        label: path.charAt(0).toUpperCase() + path.slice(1),
+        label: slugToReadable(path),
         isCurrent: index === pathArray.length - 1,
       };
     });

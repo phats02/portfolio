@@ -7,6 +7,7 @@ import ProfileImage from "@/assets/images/profile.png";
 interface ProjectsInterface {
   id: number;
   title: string;
+  urlTitle: string;
   desc: string[];
   tech: string[];
   image: StaticImageData;
@@ -18,6 +19,7 @@ export const projects: ProjectsInterface[] = [
   {
     id: 1,
     title: "VSE&T Library, VIPS-TC",
+    urlTitle: "vset-library",
     desc: [
       "Developed and launched a functional library website for a technical institution",
       "Implemented user-friendly interface to improve accessibility of library resources",
@@ -30,6 +32,7 @@ export const projects: ProjectsInterface[] = [
   {
     id: 2,
     title: "Profile Management System",
+    urlTitle: "profile-management",
     desc: [
       "Developed a full-stack profile management system application",
       "Created intuitive user interface for easy profile creation, editing, and management",
@@ -45,6 +48,7 @@ export const projects: ProjectsInterface[] = [
   {
     id: 3,
     title: "Github Profile Finder",
+    urlTitle: "github-profile",
     desc: [
       "Implemented dynamic content fetching from GitHub API to display up-to-date project information",
       "Designed a responsive and visually appealing interface to highlight coding projects and skills",
@@ -57,6 +61,7 @@ export const projects: ProjectsInterface[] = [
   {
     id: 4,
     title: "Notes App",
+    urlTitle: "notes-app",
     desc: [
       "Implemented user-friendly interface for creating, editing, and organizing notes",
       "Implemented local storage for persistent note saving",
