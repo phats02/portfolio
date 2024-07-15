@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Josefin_Sans, Sen } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+export const sen = Sen({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sen",
+});
+
+export const josefinSans = Josefin_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-josefin",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${sen.variable} ${josefinSans.variable}`}>
       <body
-        className={`${inter.className} w-screen min-h-screen m-0 p-0 overflow-x-hidden flex flex-col items-center`}
+        className={`${sen.className} w-screen min-h-screen m-0 p-0 overflow-x-hidden flex flex-col items-center`}
       >
         {/* <main className="relative mx-auto mb-16 max-w-4xl px-8"> */}
         {children}

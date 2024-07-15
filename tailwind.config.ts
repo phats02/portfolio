@@ -18,6 +18,10 @@ const config: Config = {
       boxShadow: {
         commandButton: "0 0 0 3px hsl(0 0% 30%)",
       },
+      fontFamily: {
+        sen: ["var(--font-sen)"],
+        josefin: ["var(--font-josefin)"],
+      },
       typography: ({ theme }: PluginAPI) => ({
         DEFAULT: {
           css: {
