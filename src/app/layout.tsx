@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Josefin_Sans, Sen } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/ui/footer";
 
 export const sen = Sen({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ export default function RootLayout({
         className={`${sen.className} w-screen min-h-screen relative m-0 p-0 overflow-x-hidden flex flex-col items-center`}
       >
         {children}
-        <div className="absolute top-0 left-0 right-0">
+        <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
           <div className="absolute left-8 top-16 -z-10 overflow-visible opacity-20">
             <div className="circle-1 -z-10 h-[400px] w-[700px] rounded-full bg-red-700 mix-blend-multiply blur-[128px]" />
           </div>
@@ -40,7 +41,18 @@ export default function RootLayout({
           <div className="absolute left-12 top-48 -z-10 overflow-visible opacity-20">
             <div className="circle-3 -z-10 h-[600px] w-[500px] rounded-full bg-blue-700 mix-blend-multiply blur-[128px]" />
           </div>
+
+          <div className="absolute right-8 bottom-16 -z-10 overflow-visible opacity-20">
+            <div className="circle-4 -z-10 h-[400px] w-[700px] rounded-full bg-purple-700 mix-blend-multiply blur-[128px]" />
+          </div>
+          <div className="absolute right-10 bottom-32 -z-10 overflow-visible opacity-20">
+            <div className="circle-5 -z-10 h-[400px] w-[700px] rounded-full bg-yellow-700 mix-blend-multiply blur-[128px]" />
+          </div>
+          <div className="absolute right-12 bottom-48 -z-10 overflow-visible opacity-20">
+            <div className="circle-6 -z-10 h-[600px] w-[500px] rounded-full bg-cyan-700 mix-blend-multiply blur-[128px]" />
+          </div>
         </div>
+        <Footer />
       </body>
     </html>
   );
