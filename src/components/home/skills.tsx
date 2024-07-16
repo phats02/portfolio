@@ -4,13 +4,13 @@ const Skills = (): JSX.Element => {
   return (
     <div className="flex flex-col gap-4">
       <h2 className="text-3xl font-bold font-josefin">Skills</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="w-full flex flex-col gap-4">
         {skills.map((skill) => (
           <div key={skill.id} className="flex flex-col items-center gap-4">
             <h2 className="text-xl w-full bg-gradient-to-br from-[#9ebd13] to-[#008552] bg-clip-text font-bold text-transparent">
               {skill.title}
             </h2>
-            <div className="grid grid-cols-2 gap-4 w-full">
+            <div className="grid grid-cols-6 gap-4 w-full">
               {skill.children.map((item, index) => (
                 <div
                   key={`${item.id}`}
