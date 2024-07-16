@@ -31,8 +31,6 @@ export default function RootLayout({
       <body
         className={`${sen.className} w-screen min-h-screen relative m-0 p-0 overflow-x-hidden flex flex-col items-center`}
       >
-        <Header />
-        {children}
         <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
           <div className="absolute left-8 top-16 -z-10 overflow-visible opacity-20">
             <div className="circle-1 -z-10 h-[400px] w-[700px] rounded-full bg-red-700 mix-blend-multiply blur-[128px]" />
@@ -54,7 +52,11 @@ export default function RootLayout({
             <div className="circle-6 -z-10 h-[600px] w-[500px] rounded-full bg-cyan-700 mix-blend-multiply blur-[128px]" />
           </div>
         </div>
-        <Footer />
+        <Header />
+        <main className="z-10 relative w-full flex flex-col items-center">
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );
