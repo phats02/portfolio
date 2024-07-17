@@ -3,6 +3,8 @@ import { Josefin_Sans, Sen } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
+import KProvider from "@/components/kprovider/KProvider";
+import CommandBarInvoker from "@/components/kprovider/commandBarInvoker";
 
 export const sen = Sen({
   subsets: ["latin"],
@@ -41,7 +43,6 @@ export default function RootLayout({
           <div className="absolute left-12 top-48 -z-10 overflow-visible opacity-20">
             <div className="circle-3 -z-10 h-[600px] w-[500px] rounded-full bg-blue-700 mix-blend-multiply blur-[128px]" />
           </div>
-
           <div className="absolute right-8 bottom-16 -z-10 overflow-visible opacity-20">
             <div className="circle-4 -z-10 h-[400px] w-[700px] rounded-full bg-purple-700 mix-blend-multiply blur-[128px]" />
           </div>
@@ -53,10 +54,13 @@ export default function RootLayout({
           </div>
         </div>
         <Header />
-        <main className="z-10 relative w-full flex flex-col items-center">
-          {children}
-          <Footer />
-        </main>
+        <KProvider>
+          <main className="z-10 relative w-full flex flex-col items-center">
+            {children}
+            <Footer />
+          </main>
+          <CommandBarInvoker />
+        </KProvider>
       </body>
     </html>
   );
