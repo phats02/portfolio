@@ -29,7 +29,7 @@ export default function ProjectPage({ params }: { params: { title: string } }) {
         {project.link && (
           <a
             href={project.link}
-            className="gradient-underline relative flex space-x-2 items-center"
+            className="w-max gradient-underline relative flex space-x-2 items-center"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -41,7 +41,7 @@ export default function ProjectPage({ params }: { params: { title: string } }) {
         {project.githubLink && (
           <a
             href={project.githubLink}
-            className="gradient-underline relative flex gap-2 space-x-2 items-center"
+            className="w-max gradient-underline relative flex gap-2 space-x-2 items-center"
             target="_blank"
             rel="noopener noreferrer"
           >
