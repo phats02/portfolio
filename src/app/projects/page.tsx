@@ -4,12 +4,12 @@ import { projects } from "@/assets/data/projects";
 
 export default function Page() {
   return (
-    <div className="w-[60%] my-8 flex flex-col gap-8">
+    <div className="w-[90%] lg:w-[70%] xl:w-[60%] my-8 flex flex-col gap-8">
       <h2 className="text-3xl font-bold font-josefin">Projects</h2>
       <div className="w-full flex flex-col gap-4">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} {...project} />
-          ))}
+        {projects.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
       </div>
       <a
         href="https://github.com/stars/Utkarsh-Singhal-26/lists/projects"

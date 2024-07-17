@@ -10,7 +10,7 @@ const Skills = (): JSX.Element => {
             <h2 className="text-xl w-full bg-gradient-to-br from-[#9ebd13] to-[#008552] bg-clip-text font-bold text-transparent">
               {skill.title}
             </h2>
-            <div className="grid grid-cols-6 gap-4 w-full">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-4 w-full">
               {skill.children.map((item, index) => (
                 <div
                   key={`${item.id}`}

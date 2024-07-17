@@ -28,11 +28,11 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectsInterface>(
       >
         <div className="overflow-hidden rounded-lg md:w-72">
           <Link href={`/projects/${urlTitle}`}>
-            <div className="relative h-36 w-full transition duration-200 hover:opacity-60 md:h-full md:w-72">
+            <div className="relative h-60 w-full transition duration-200 hover:opacity-60 md:h-full md:w-72">
               <NextImage
                 src={image}
                 alt={title}
-                className="rounded-xl"
+                className="rounded-xl max-md:object-cover"
                 layout="fill"
               />
             </div>

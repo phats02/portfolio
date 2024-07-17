@@ -13,7 +13,7 @@ export default function ProjectPage({ params }: { params: { title: string } }) {
   }
 
   return (
-    <div className="w-[50%] my-8 flex flex-col gap-4">
+    <div className="w-[90%] lg:w-[70%] xl:w-[50%] my-8 flex flex-col gap-4 overflow-hidden">
       <div className="flex space-x-8">
         {/* <IconFactory
           name={project.iconName}
