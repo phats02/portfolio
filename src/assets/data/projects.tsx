@@ -70,7 +70,6 @@ export const projects: ProjectsInterface[] = [
     tech: ["React"],
     image: NotesImage,
     link: "https://notes-app-utkarsh.vercel.app/",
-    githubLink:
-      "https://github.com/Utkarsh-Singhal-26/website-training/tree/main/notes-app",
+    githubLink: "https://github.com/Utkarsh-Singhal-26/notes-app",
   },
 ];
