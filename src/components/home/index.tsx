@@ -16,8 +16,8 @@ const Hero = (): JSX.Element => {
           <p>
             Currently pursuing my
             <span className="text-white"> BCA in Information Technology</span>,
-            I'm continuously expanding my skills in modern web technologies and
-            exploring new frontiers in development.
+            I&apos;m continuously expanding my skills in modern web technologies
+            and exploring new frontiers in development.
           </p>
         </div>
       </div>
