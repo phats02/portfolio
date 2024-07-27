@@ -1,13 +1,13 @@
 const defaultSEOConfig = {
   title: "Utkarsh Singhal | Fullstack Developer",
-  description: "Full Stack Developer • React Specialist • Tech Explorer",
+  description: "Full Stack Developer",
   canonical: "https://utkarsh-singhal.tech/",
   openGraph: {
     type: "website",
     url: "https://utkarsh-singhal.tech/",
     site_name: "Utkarsh Singhal",
     title: "Utkarsh Singhal | Fullstack Developer",
-    description: "Full Stack Developer • React Specialist • Tech Explorer",
+    description: "Full Stack Developer",
     profile: {
       firstName: "Utkarsh",
       lastName: "Singhal",

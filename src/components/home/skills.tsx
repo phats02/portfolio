@@ -15,7 +15,7 @@ const Skills = (): JSX.Element => {
                 <div
                   key={`${item.id}`}
                   data-tip={item.title}
-                  className={`rounded-xl border-[1px] border-tertiary bg-secondary/50 transition duration-200 hover:border-accent flex flex-col gap-2 items-center justify-center p-4 cursor-pointer ${
+                  className={`rounded-xl border-[1px] border-tertiary bg-secondary/50 transition duration-200 hover:border-accent flex flex-col gap-2 items-center justify-center p-4 ${
                     skill.title === "Development Tools" &&
                     index === skill.children.length - 1
                       ? "col-span-2"
