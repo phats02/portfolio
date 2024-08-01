@@ -3,9 +3,9 @@ import NextImage from "next/image";
 const Hero = (): JSX.Element => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center gap-12">
-      <div className="flex flex-col justify-center gap-4">
+      <div className="flex flex-col justify-center">
         <h1 className="text-5xl font-bold font-josefin">Utkarsh Singhal</h1>
-        <h2 className="text-lg font-medium text-gray-400">
+        <h2 className="text-lg font-medium text-gray-400 mb-2">
           Full Stack Developer
         </h2>
         <div className="text-md text-lg text-justify text-gray-300">

@@ -16,17 +16,30 @@ const Footer = (): JSX.Element => {
           </a>
         ))}
       </div>
-      <p>
-        Made by{" "}
-        <a
-          href="https://github.com/Utkarsh-Singhal-26"
-          className="gradient-underline inline-block relative"
-        >
+      <div>
+        <p>
+          Made by{" "}
+          <a
+            href="https://github.com/Utkarsh-Singhal-26"
+            className="gradient-underline inline-block relative"
+          >
+            <span className="bg-gradient-to-br from-[#9ebd13] to-[#008552] bg-clip-text font-bold text-transparent">
+              Utkarsh Singhal
+            </span>
+          </a>
+        </p>
+        <p>
+          Made with{" "}
           <span className="bg-gradient-to-br from-[#9ebd13] to-[#008552] bg-clip-text font-bold text-transparent">
-            Utkarsh Singhal
+            Next.js, Tailwind CSS
+          </span>{" "}
+          and{" "}
+          <span className="bg-gradient-to-br from-[#9ebd13] to-[#008552] bg-clip-text font-bold text-transparent">
+            TypeScript
           </span>
-        </a>
-      </p>
+          .
+        </p>
+      </div>
 
       <style jsx global>{`
         .gradient-underline {
