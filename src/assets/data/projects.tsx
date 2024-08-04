@@ -55,7 +55,7 @@ export const projects: ProjectsInterface[] = [
     ],
     tech: ["React", "Github API"],
     image: GithubImage,
-    link: "https://github-profile-utkarsh.netlify.app/",
+    link: "https://github-profile-viewer-utkarsh.vercel.app/",
     githubLink: "https://github.com/Utkarsh-Singhal-26/github-profile-viewer",
   },
   {
