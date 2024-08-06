@@ -110,11 +110,11 @@ export const skills: SkillsInterface[] = [
         title: "Firebase",
         icon: <SiFirebase size={32} />,
       },
-      {
-        id: 5,
-        title: "MongoDB",
-        icon: <SiMongodb size={32} />,
-      },
+      // {
+      //   id: 5,
+      //   title: "MongoDB",
+      //   icon: <SiMongodb size={32} />,
+      // },
     ],
   },
 
