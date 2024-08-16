@@ -15,10 +15,6 @@ export default function ProjectPage({ params }: { params: { title: string } }) {
   return (
     <div className="w-[90%] lg:w-[70%] xl:w-[50%] my-8 flex flex-col gap-4 overflow-hidden">
       <div className="flex space-x-8">
-        {/* <IconFactory
-          name={project.iconName}
-          className="h-16 w-16 rounded-xl bg-tertiary p-2 shadow-md"
-        /> */}
         <div className="flex flex-col space-y-2">
           <h1 className="text-2xl font-bold font-josefin">{project.title}</h1>
           <p className="text-sm text-gray-300">{project.desc[0]}</p>

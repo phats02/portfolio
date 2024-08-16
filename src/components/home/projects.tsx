@@ -17,10 +17,6 @@ const Projects = (): JSX.Element => {
                 href={`/projects/${project.urlTitle}`}
               className="flex flex-col gap-4"
             >
-              {/* <IconFactory
-                name={project.iconName}
-                className="h-12 w-12 rounded-xl bg-tertiary p-1.5 shadow-md"
-              /> */}
               <div className="flex-col gap-2">
                 <h3 className="flex flex-row items-center space-x-2 text-lg font-semibold">
                   {project.title}
