@@ -1,8 +1,8 @@
 import Home from "@/components/home";
-import Experience from "@/components/home/experience";
-import Skills from "@/components/home/skills";
-import Projects from "@/components/home/projects";
 import Contact from "@/components/home/contact";
+import Experience from "@/components/home/experience";
+import Projects from "@/components/home/projects";
+import Skills from "@/components/home/skills";
 
 export default function Page() {
   return (

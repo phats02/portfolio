@@ -1,9 +1,9 @@
 "use client";
+import { cleanLink } from "@/utils/helpers";
 import NextImage, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { forwardRef } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { cleanLink } from "@/utils/helpers";
 
 interface ProjectsInterface {
   id: number;

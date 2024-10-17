@@ -1,4 +1,6 @@
 "use client";
+import { projects } from "@/assets/data/projects";
+import socials from "@/assets/data/socials";
 import {
   Action,
   KBarAnimator,
@@ -12,8 +14,6 @@ import { ReactNode } from "react";
 import { CiSearch } from "react-icons/ci";
 import { FaRegLightbulb } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
-import socials from "@/assets/data/socials";
-import { projects } from "@/assets/data/projects";
 import KResults from "./KResults";
 
 interface KProviderProps {

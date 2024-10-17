@@ -1,7 +1,7 @@
+import { projects } from "@/assets/data/projects";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import { projects } from "@/assets/data/projects";
 
 const Projects = (): JSX.Element => {
   return (

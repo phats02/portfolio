@@ -1,12 +1,12 @@
+import KProvider from "@/components/kprovider/KProvider";
+import CommandBarInvoker from "@/components/kprovider/commandBarInvoker";
+import Footer from "@/components/ui/footer";
+import Header from "@/components/ui/header";
 import type { Metadata } from "next";
 import { Josefin_Sans, Sen } from "next/font/google";
 import Script from "next/script";
-import "./globals.css";
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
-import KProvider from "@/components/kprovider/KProvider";
-import CommandBarInvoker from "@/components/kprovider/commandBarInvoker";
 import defaultSEOConfig from "../../next-seo.config";
+import "./globals.css";
 
 export const sen = Sen({
   subsets: ["latin"],

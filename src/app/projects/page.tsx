@@ -1,6 +1,6 @@
-import { FaArrowRight } from "react-icons/fa";
-import ProjectCard from "@/components/projects/projectCard";
 import { projects } from "@/assets/data/projects";
+import ProjectCard from "@/components/projects/projectCard";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Page() {
   return (

@@ -1,9 +1,9 @@
 "use client";
-import { notFound } from "next/navigation";
-import NextImage from "next/image";
-import { FaArrowRight, FaGithub } from "react-icons/fa";
 import { projects } from "@/assets/data/projects";
 import { getGitHubOwnerAndRepoFromLink } from "@/utils/helpers";
+import NextImage from "next/image";
+import { notFound } from "next/navigation";
+import { FaArrowRight, FaGithub } from "react-icons/fa";
 
 export default function ProjectPage({ params }: { params: { title: string } }) {
   const project = projects.find((p) => p.urlTitle === params.title);
