@@ -12,7 +12,7 @@ export default function Page() {
         ))}
       </div>
       <a
-        href="https://github.com/stars/Utkarsh-Singhal-26/lists/projects"
+        href="https://github.com/stars/Utkarsh-Singhal-26/lists/projects-man-technologist"
         className="group flex items-center justify-start space-x-2 text-xl font-medium"
         target="_blank"
       >

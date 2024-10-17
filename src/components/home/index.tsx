@@ -1,5 +1,3 @@
-import NextImage from "next/image";
-
 const Hero = (): JSX.Element => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center gap-12">
@@ -22,11 +20,11 @@ const Hero = (): JSX.Element => {
           complex problems.
         </p>
       </div>
-      <div className="flex flex-col justify-center gap-12">
-        <div className="relative h-44 w-44 overflow-hidden rounded-lg">
-          <NextImage src="/U.jpg" layout="fill" alt="Utkarsh Singhal" />
+      {/* <div className="flex flex-col justify-center gap-12">
+        <div className="relative h-60 w-60 overflow-hidden rounded-lg">
+          <NextImage src="/image.png" layout="fill" alt="Utkarsh Singhal" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

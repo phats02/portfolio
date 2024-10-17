@@ -4,6 +4,7 @@ import { AiOutlineAntDesign } from "react-icons/ai";
 import { BiLogoTypescript } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
 import {
+  FaAws,
   FaBootstrap,
   FaGitAlt,
   FaGithubSquare,
@@ -110,11 +111,11 @@ export const skills: SkillsInterface[] = [
         title: "Firebase",
         icon: <SiFirebase size={32} />,
       },
-      // {
-      //   id: 5,
-      //   title: "MongoDB",
-      //   icon: <SiMongodb size={32} />,
-      // },
+      {
+        id: 5,
+        title: "MongoDB",
+        icon: <SiMongodb size={32} />,
+      },
     ],
   },
 
@@ -146,6 +147,11 @@ export const skills: SkillsInterface[] = [
         id: 5,
         title: "Google Cloud Platform",
         icon: <SiGooglecloud size={32} />,
+      },
+      {
+        id: 6,
+        title: "Amazon Web Services",
+        icon: <FaAws size={32} />,
       },
     ],
   },

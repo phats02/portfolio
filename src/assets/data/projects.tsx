@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 import LibraryImage from "@/assets/images/library.png";
+import TodoImage from "@/assets/images/todo.png";
 import GithubImage from "@/assets/images/github.png";
 import NotesImage from "@/assets/images/notes.png";
 import ProfileImage from "@/assets/images/profile.png";
@@ -9,6 +10,7 @@ interface ProjectsInterface {
   title: string;
   urlTitle: string;
   desc: string[];
+  note?: string;
   tech: string[];
   image: StaticImageData;
   link: string;
@@ -31,6 +33,28 @@ export const projects: ProjectsInterface[] = [
   },
   {
     id: 2,
+    title: "ToDo Extension with Chrome Storage API",
+    urlTitle: "todo-extension",
+    desc: [
+      "Developed and launched a Chrome extension for task management using Chrome Storage API",
+      "Implemented user-friendly interface to enhance productivity and task tracking",
+      "Designed responsive layout ensuring seamless experience across different screen sizes and browsers",
+      "Integrated message broadcasting for real-time updates and synchronization",
+    ],
+    note: "Works perfectly when used with the Chrome extension for optimal functionality and experience.",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Bowser Extension",
+      "Chrome Storage API",
+      "Message Broadcasting",
+    ],
+    image: TodoImage,
+    link: "https://todo-extension-webapp.vercel.app/",
+    githubLink: "https://github.com/Utkarsh-Singhal-26/todo-extension",
+  },
+  {
+    id: 3,
     title: "Profile Management System",
     urlTitle: "profile-management",
     desc: [
@@ -46,7 +70,7 @@ export const projects: ProjectsInterface[] = [
       "https://github.com/Utkarsh-Singhal-26/profile-management-system",
   },
   {
-    id: 3,
+    id: 4,
     title: "Github Profile Finder",
     urlTitle: "github-profile",
     desc: [
@@ -59,7 +83,7 @@ export const projects: ProjectsInterface[] = [
     githubLink: "https://github.com/Utkarsh-Singhal-26/github-profile-viewer",
   },
   {
-    id: 4,
+    id: 5,
     title: "Notes App",
     urlTitle: "notes-app",
     desc: [

@@ -2,7 +2,7 @@ import { skills } from "@/assets/data/skills";
 
 const Skills = (): JSX.Element => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 w-full">
       <h2 className="text-3xl font-bold font-josefin">Skills</h2>
       <div className="w-full flex flex-col gap-4">
         {skills.map((skill) => (
@@ -17,7 +17,8 @@ const Skills = (): JSX.Element => {
                   data-tip={item.title}
                   className={`rounded-xl border-[1px] border-tertiary bg-secondary/50 transition duration-200 hover:border-accent flex flex-col gap-2 items-center justify-center p-4 ${
                     skill.title === "Development Tools" &&
-                    index === skill.children.length - 1
+                    (index === skill.children.indexOf(skill.children[4]) ||
+                      index === skill.children.indexOf(skill.children[5]))
                       ? "col-span-2"
                       : ""
                   }`}

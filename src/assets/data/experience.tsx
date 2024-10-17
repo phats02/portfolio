@@ -16,6 +16,6 @@ export const experience: ExperienceInterface[] = [
     id: 2,
     title: "Full Stack Intern",
     company: "Website Development and Maintenance Cell, VIPS-TC",
-    time: "04 / 2024 - Present",
+    time: "02 / 2024 - 07 / 2024",
   },
 ];

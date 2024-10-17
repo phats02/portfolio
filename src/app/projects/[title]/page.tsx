@@ -64,6 +64,14 @@ export default function ProjectPage({ params }: { params: { title: string } }) {
         ))}
       </ul>
 
+      {project.note && (
+        <div className="mt-4 p-4 bg-tertiary text-gray-300 rounded-lg">
+          <p className="text-sm flex items-center gap-4">
+            <span className="font-bold">Note:</span> {project.note}
+          </p>
+        </div>
+      )}
+
       <div className="mt-4">
         <h2 className="text-xl font-semibold mb-2">Technologies Used</h2>
         <div className="flex flex-wrap gap-2">
