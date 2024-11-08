@@ -10,7 +10,7 @@ export const experience: ExperienceInterface[] = [
     id: 1,
     title: "Product Engineer Intern",
     company: "Requestly",
-    time: "08 / 2024 - Present",
+    time: "08 / 2024 - 10 / 2024",
   },
   {
     id: 2,
