@@ -16,11 +16,7 @@ const Skills = (): JSX.Element => {
                   key={`${item.id}`}
                   data-tip={item.title}
                   className={`rounded-xl border-[1px] border-tertiary bg-secondary/50 transition duration-200 hover:border-accent flex flex-col gap-2 items-center justify-center p-4 ${
-                    skill.title === "Development Tools" &&
-                    (index === skill.children.indexOf(skill.children[4]) ||
-                      index === skill.children.indexOf(skill.children[5]))
-                      ? "col-span-2"
-                      : ""
+                    item.isSpan && "col-span-2"
                   }`}
                 >
                   {item.icon}

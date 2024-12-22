@@ -12,7 +12,7 @@ interface ProjectsInterface {
   desc: string[];
   tech: string[];
   image: StaticImageData;
-  link: string;
+  link?: string;
   githubLink?: string;
 }
 

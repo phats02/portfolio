@@ -1,9 +1,10 @@
-import { StaticImageData } from "next/image";
-import LibraryImage from "@/assets/images/library.png";
-import TodoImage from "@/assets/images/todo.png";
 import GithubImage from "@/assets/images/github.png";
+import LibraryImage from "@/assets/images/library.png";
+import NotesMarkdownImage from "@/assets/images/notes-markdown.png";
 import NotesImage from "@/assets/images/notes.png";
 import ProfileImage from "@/assets/images/profile.png";
+import TodoImage from "@/assets/images/todo.png";
+import { StaticImageData } from "next/image";
 
 interface ProjectsInterface {
   id: number;
@@ -13,7 +14,7 @@ interface ProjectsInterface {
   note?: string;
   tech: string[];
   image: StaticImageData;
-  link: string;
+  link?: string;
   githubLink?: string;
 }
 
@@ -55,6 +56,20 @@ export const projects: ProjectsInterface[] = [
   },
   {
     id: 3,
+    title: "Notes Markdown App",
+    urlTitle: "notes-markdown-app",
+    desc: [
+      "Developed a cross-platform desktop application for managing notes with markdown support",
+      "Implemented live markdown preview and local file-based storage for persistence",
+      "Enhanced user experience with a responsive and intuitive interface",
+    ],
+    note: "This app is not published anywhere and is only available through the source code on GitHub.",
+    tech: ["Electron", "React", "Tailwind CSS", "TypeScript"],
+    image: NotesMarkdownImage,
+    githubLink: "https://github.com/Utkarsh-Singhal-26/notes-desktop-app",
+  },
+  {
+    id: 4,
     title: "Profile Management System",
     urlTitle: "profile-management",
     desc: [
@@ -70,7 +85,7 @@ export const projects: ProjectsInterface[] = [
       "https://github.com/Utkarsh-Singhal-26/profile-management-system",
   },
   {
-    id: 4,
+    id: 5,
     title: "Github Profile Finder",
     urlTitle: "github-profile",
     desc: [
@@ -83,7 +98,7 @@ export const projects: ProjectsInterface[] = [
     githubLink: "https://github.com/Utkarsh-Singhal-26/github-profile-viewer",
   },
   {
-    id: 5,
+    id: 6,
     title: "Notes App",
     urlTitle: "notes-app",
     desc: [
