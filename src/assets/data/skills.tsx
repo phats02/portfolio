@@ -28,8 +28,10 @@ import {
   SiGraphql,
   SiMongodb,
   SiPostman,
+  SiReactquery,
   SiVercel,
   SiVite,
+  SiZod,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -70,6 +72,7 @@ export const skills: SkillsInterface[] = [
       {
         id: 4,
         title: "TypeScript",
+        isSpan: true,
         icon: <BiLogoTypescript size={32} />,
       },
       {
@@ -84,31 +87,43 @@ export const skills: SkillsInterface[] = [
       },
       {
         id: 7,
+        title: "Tanstack Query",
+        isSpan: true,
+        icon: <SiReactquery size={32} />,
+      },
+      {
+        id: 8,
+        title: "Zod",
+        icon: <SiZod size={32} />,
+      },
+      {
+        id: 9,
         title: "Astro",
         icon: <SiAstro size={32} />,
       },
       {
-        id: 8,
+        id: 10,
         title: "Tailwind CSS",
         icon: <RiTailwindCssFill size={32} />,
       },
       {
-        id: 9,
+        id: 11,
         title: "Ant Design",
+        isSpan: true,
         icon: <AiOutlineAntDesign size={32} />,
       },
       {
-        id: 10,
+        id: 12,
         title: "Bootstrap",
         icon: <FaBootstrap size={32} />,
       },
       {
-        id: 11,
+        id: 13,
         title: "Material UI",
         icon: <Image src={MUIIcon} alt="mui-icon" width={32} height={32} />,
       },
       {
-        id: 12,
+        id: 14,
         title: "Vite",
         icon: <SiVite size={32} />,
       },
@@ -149,6 +164,7 @@ export const skills: SkillsInterface[] = [
       {
         id: 3,
         title: "GraphQL",
+        isSpan: true,
         icon: <SiGraphql size={32} />,
       },
       {
@@ -169,6 +185,7 @@ export const skills: SkillsInterface[] = [
       {
         id: 7,
         title: "Contentful",
+        isSpan: true,
         icon: <SiContentful size={32} />,
       },
     ],
