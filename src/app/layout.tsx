@@ -3,6 +3,7 @@ import CommandBarInvoker from "@/components/kprovider/commandBarInvoker";
 import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Josefin_Sans, Sen } from "next/font/google";
 import Script from "next/script";
@@ -103,6 +104,7 @@ export default function RootLayout({
         </KProvider>
 
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
