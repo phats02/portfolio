@@ -14,7 +14,7 @@ const Projects = (): JSX.Element => {
             className="group relative rounded-xl border-[1px] border-tertiary bg-secondary/50 p-4 transition duration-200 hover:border-accent md:hover:scale-[1.01]"
           >
             <Link
-                href={`/projects/${project.urlTitle}`}
+              href={`/projects/${project.urlTitle}`}
               className="flex flex-col gap-4"
             >
               <div className="flex-col gap-2">
