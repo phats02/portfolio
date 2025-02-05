@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 
-export const outfit = Outfit({
+const outfit = Outfit({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-outfit",
