@@ -1,6 +1,7 @@
 "use client";
 
-import { Header, Navbar } from "@/components/sections";
+import { DATA } from "@/app/data";
+import { AboutMe, Header, Navbar } from "@/components/sections";
 
 export default function Page() {
   return (
@@ -8,7 +9,8 @@ export default function Page() {
       <Navbar />
 
       <main className="min-h-lvh px-4">
-        <Header />
+        <Header data={DATA.HEADER} />
+        <AboutMe data={DATA.ABOUT_ME} />
       </main>
     </div>
   );
