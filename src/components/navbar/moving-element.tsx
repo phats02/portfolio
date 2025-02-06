@@ -11,12 +11,14 @@ interface MovingElementProps {
   children: React.ReactNode;
   className?: string;
   change?: () => void;
+  toChange?: boolean;
 }
 
 export const MovingElement: React.FC<MovingElementProps> = ({
   children,
   className = "",
   change,
+  toChange = true,
 }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -65,11 +67,13 @@ export const MovingElement: React.FC<MovingElementProps> = ({
       style={{ x, y }}
     >
       <Button
-        variant="ghost"
+        variant={toChange ? "ghost" : undefined}
         onMouseEnter={(e) =>
-          e.currentTarget.setAttribute("variant", "secondary")
+          toChange && e.currentTarget.setAttribute("variant", "secondary")
         }
-        onMouseLeave={(e) => e.currentTarget.setAttribute("variant", "ghost")}
+        onMouseLeave={(e) =>
+          toChange && e.currentTarget.setAttribute("variant", "ghost")
+        }
         onClick={change}
         className={className}
       >
