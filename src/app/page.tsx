@@ -1,8 +1,13 @@
 "use client";
 
 import { DATA } from "@/app/data";
-import { AboutMe, Experience, Header, Navbar } from "@/components/sections";
-import { Projects } from "@/components/sections/projects";
+import {
+  AboutMe,
+  Experience,
+  Header,
+  Navbar,
+  Projects,
+} from "@/components/sections";
 
 export default function Page() {
   return (
