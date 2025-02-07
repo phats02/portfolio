@@ -4,9 +4,11 @@ import { DATA } from "@/app/data";
 import {
   AboutMe,
   Experience,
+  Footer,
   Header,
   Navbar,
   Projects,
+  Skills,
 } from "@/components/sections";
 
 export default function Page() {
@@ -19,6 +21,8 @@ export default function Page() {
         <AboutMe data={DATA.ABOUT_ME} />
         <Experience data={DATA.EXPERIENCE} />
         <Projects data={DATA.PROJECTS} />
+        <Skills data={DATA.SKILLS} />
+        <Footer />
       </main>
     </div>
   );

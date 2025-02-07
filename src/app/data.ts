@@ -132,4 +132,38 @@ export const DATA = {
       TECH_STACK: ["Electron.js", "React.js", "Tailwind CSS", "Markdown"],
     },
   },
+
+  SKILLS: {
+    Languages: ["JavaScript", "TypeScript", "HTML", "CSS", "Node.js"],
+    Frameworks: [
+      "React.js",
+      "Next.js",
+      "Astro",
+      "Express.js",
+      "React Native",
+      "Expo",
+      "Electron",
+    ],
+    Libraries: [
+      "TanStack Query",
+      "Zod",
+      "Tailwind CSS",
+      "ShadCN",
+      "Material UI",
+      "Ant Design",
+    ],
+    "Database & Backend": [
+      "MongoDB",
+      "Firebase",
+      "Redis",
+      "Contentful",
+      "GraphQL",
+    ],
+    "Cloud & Deployment": [
+      "Google Cloud Platform (GCP)",
+      "Amazon Web Services (AWS)",
+      "Vercel",
+    ],
+    "Tools & Platforms": ["Git", "GitHub", "Postman", "Visual Studio Code"],
+  },
 };
