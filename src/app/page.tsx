@@ -1,7 +1,7 @@
 "use client";
 
 import { DATA } from "@/app/data";
-import { AboutMe, Header, Navbar } from "@/components/sections";
+import { AboutMe, Experience, Header, Navbar } from "@/components/sections";
 
 export default function Page() {
   return (
@@ -11,6 +11,7 @@ export default function Page() {
       <main className="min-h-lvh px-4">
         <Header data={DATA.HEADER} />
         <AboutMe data={DATA.ABOUT_ME} />
+        <Experience data={DATA.EXPERIENCE} />
       </main>
     </div>
   );
