@@ -91,4 +91,45 @@ export const DATA = {
       ],
     },
   },
+
+  PROJECTS: {
+    "Digital Library, VIPS-TC": {
+      LIVE_PREVIEW: "https://btech.library.vips.edu/",
+      DESCRIPTION: [
+        "Developed and launched a functional library website for a technical institution.",
+        "Implemented user-friendly interface to improve accessibility of library resources.",
+        "Designed responsive layout ensuring compatibility across desktop and mobile devices",
+      ],
+      TECH_STACK: ["React.js", "Tailwind CSS", "Firebase"],
+    },
+    "ToDo Extension with Chrome Storage API": {
+      LIVE_PREVIEW: "https://todo-extension-webapp.vercel.app/",
+      GITHUB: "https://github.com/Utkarsh-Singhal-26/todo-extension",
+      DESCRIPTION: [
+        "Developed and launched a Chrome extension for task management using Chrome Storage API.",
+        "Implemented user-friendly interface to enhance productivity and task tracking.",
+        "Designed responsive layout ensuring seamless experience across different screen sizes and browsers.",
+        "Integrated message broadcasting for real-time updates and synchronization",
+      ],
+      NOTE: "Note: The extension is not published on the Chrome Web Store.",
+      TECH_STACK: [
+        "TypeScript",
+        "React.js",
+        "Tailwind CSS",
+        "Borwser Extension",
+        "Chrome Storage API",
+        "Message Broadcasting",
+      ],
+    },
+    "Notes Markdown App": {
+      GITHUB: "https://github.com/Utkarsh-Singhal-26/notes-desktop-app",
+      DESCRIPTION: [
+        "Developed a cross-platform desktop application for managing notes with markdown support",
+        "Implemented live markdown preview and local file-based storage for persistence",
+        "Enhanced user experience with a responsive and intuitive interface",
+      ],
+      NOTE: "Note: This app is not published on any platform.",
+      TECH_STACK: ["Electron.js", "React.js", "Tailwind CSS", "Markdown"],
+    },
+  },
 };

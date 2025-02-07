@@ -2,6 +2,7 @@
 
 import { DATA } from "@/app/data";
 import { AboutMe, Experience, Header, Navbar } from "@/components/sections";
+import { Projects } from "@/components/sections/projects";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
         <Header data={DATA.HEADER} />
         <AboutMe data={DATA.ABOUT_ME} />
         <Experience data={DATA.EXPERIENCE} />
+        <Projects data={DATA.PROJECTS} />
       </main>
     </div>
   );
