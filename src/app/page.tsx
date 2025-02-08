@@ -20,7 +20,7 @@ export default function Page() {
         <Header data={DATA.HEADER} />
         <AboutMe data={DATA.ABOUT_ME} />
         <Experience data={DATA.EXPERIENCE} />
-        <Projects data={DATA.PROJECTS} />
+        <Projects data={DATA.PROJECTS} all={DATA.ALL_PROJECTS} />
         <Skills data={DATA.SKILLS} />
         <Footer />
       </main>

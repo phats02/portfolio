@@ -8,7 +8,13 @@ interface IProjectData {
   TECH_STACK: string[];
 }
 
-export function Projects({ data }: { data: Record<string, IProjectData> }) {
+export function Projects({
+  data,
+  all,
+}: {
+  data: Record<string, IProjectData>;
+  all: string;
+}) {
   return (
     <div id="projects" className="py-10">
       <h2 className="text-base font-medium text-primary/90">projects.</h2>
@@ -68,8 +74,9 @@ export function Projects({ data }: { data: Record<string, IProjectData> }) {
       <div className="mt-8 flex justify-center">
         <a
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 text-sm text-muted-foreground"
-          href="https://github.com/stars/Utkarsh-Singhal-26/lists/projects-man-technologist"
+          href={all}
         >
           View all projects
         </a>

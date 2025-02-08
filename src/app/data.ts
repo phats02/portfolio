@@ -133,6 +133,9 @@ export const DATA = {
     },
   },
 
+  ALL_PROJECTS:
+    "https://github.com/stars/Utkarsh-Singhal-26/lists/projects-man-technologist",
+
   SKILLS: {
     Languages: ["JavaScript", "TypeScript", "HTML", "CSS", "Node.js"],
     Frameworks: [
