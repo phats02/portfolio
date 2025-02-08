@@ -1,3 +1,7 @@
+import LibraryImage from "@/assets/library.png";
+import NotesImage from "@/assets/notes-markdown.png";
+import TodoImage from "@/assets/todo.png";
+
 export const DATA = {
   HEADER: {
     NAME: "Utkarsh Singhal",
@@ -94,6 +98,7 @@ export const DATA = {
 
   PROJECTS: {
     "Digital Library, VIPS-TC": {
+      TITLE: "digital-library",
       LIVE_PREVIEW: "https://btech.library.vips.edu/",
       DESCRIPTION: [
         "Developed and launched a functional library website for a technical institution.",
@@ -101,8 +106,10 @@ export const DATA = {
         "Designed responsive layout ensuring compatibility across desktop and mobile devices",
       ],
       TECH_STACK: ["React.js", "Tailwind CSS", "Firebase"],
+      IMAGE: LibraryImage,
     },
     "ToDo Extension with Chrome Storage API": {
+      TITLE: "todo-extension",
       LIVE_PREVIEW: "https://todo-extension-webapp.vercel.app/",
       GITHUB: "https://github.com/Utkarsh-Singhal-26/todo-extension",
       DESCRIPTION: [
@@ -120,8 +127,10 @@ export const DATA = {
         "Chrome Storage API",
         "Message Broadcasting",
       ],
+      IMAGE: TodoImage,
     },
     "Notes Markdown App": {
+      TITLE: "notes-markdown-app",
       GITHUB: "https://github.com/Utkarsh-Singhal-26/notes-desktop-app",
       DESCRIPTION: [
         "Developed a cross-platform desktop application for managing notes with markdown support",
@@ -130,6 +139,7 @@ export const DATA = {
       ],
       NOTE: "Note: This app is not published on any platform.",
       TECH_STACK: ["Electron.js", "React.js", "Tailwind CSS", "Markdown"],
+      IMAGE: NotesImage,
     },
   },
 
