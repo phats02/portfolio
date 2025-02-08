@@ -6,7 +6,7 @@ export const DATA = {
     HEADLINE:
       "Passionate about building high-performance and scalable web applications.",
     RESUME:
-      "https://drive.google.com/file/d/16Sbx3QX7xbEZN-bdxdPp3w0gPzRbwVsa/view?usp=sharing",
+      "https://drive.google.com/file/d/1U1NnGm_QubGMWXMFYYi_SdGX2dC6XiyV/view?usp=drive_link",
     EMAIL: "mailto:singhalutkarsh26@gmail.com",
     GITHUB: "https://github.com/Utkarsh-Singhal-26",
     LINKEDIN: "https://www.linkedin.com/in/singhalutkarsh26",
@@ -54,7 +54,7 @@ export const DATA = {
       {
         WEBSITE: "https://vips.edu/",
         POSITION: "Software Developer Intern",
-        LOCATION: "Remote",
+        LOCATION: "Hybrid - Delhi, India",
         DURATION: "Nov, 2023 - Present",
         DESCRIPTION: [
           "Assisted in the development of full-stack applications to support academic initiatives.",
