@@ -18,7 +18,7 @@ interface IProjectData {
 export default function Page() {
   const title = useParams().title;
   const project = Object.entries(DATA.PROJECTS).find(
-    ([key, value]) => value.TITLE === title
+    ([_, value]) => value.TITLE === title
   ) as [string, IProjectData];
 
   if (!project) {
