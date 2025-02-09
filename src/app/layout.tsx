@@ -12,11 +12,11 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Utkarsh Singhal | Software Engineer",
+  title: "Utkarsh Singhal | Software Developer",
   description:
     "Full-stack developer specializing in React, Next.js, and TypeScript.",
   openGraph: {
-    title: "Utkarsh Singhal | Software Engineer",
+    title: "Utkarsh Singhal | Software Developer",
     description: "Building scalable web applications with modern technologies.",
     images: [
       {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Utkarsh Singhal", url: "https://utkarsh-singhal.tech" }],
   keywords: [
     "Utkarsh Singhal",
-    "Software Engineer",
+    "Software Developer",
     "Full-Stack Developer",
     "React",
     "Next.js",
