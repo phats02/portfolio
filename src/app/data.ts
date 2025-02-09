@@ -2,6 +2,7 @@ import LibraryImage from "@/assets/library.png";
 import NotesImage from "@/assets/notes-markdown.png";
 import TodoImage from "@/assets/todo.png";
 import { StaticImageData } from "next/image";
+import { cache } from "react";
 
 export interface IProjectData {
   SLUG: string;
@@ -192,8 +193,9 @@ export const DATA = {
   },
 };
 
-export function getProjectData(title: string) {
-  return Object.entries(DATA.PROJECTS).find(
-    ([, value]) => value.SLUG === title
-  ) as [string, IProjectData] | undefined;
-}
+export const getProjectData = cache(
+  (title: string) =>
+    Object.entries(DATA.PROJECTS).find(([, value]) => value.SLUG === title) as
+      | [string, IProjectData]
+      | undefined
+);

@@ -1,18 +1,17 @@
 import { DATA, getProjectData } from "@/app/data";
 import { Metadata } from "next";
-import { cache } from "react";
-import Page from "./page";
 
 export const revalidate = 604800;
 
-const getProject = cache(getProjectData);
+type LayoutProps = {
+  params: Promise<{ slug: string }>;
+};
 
 export async function generateMetadata({
   params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const project = getProject(params.slug);
+}: LayoutProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const project = getProjectData(resolvedParams.slug);
 
   if (!project) {
     return {
@@ -39,18 +38,16 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return Object.values(DATA.PROJECTS).map((project) => ({
     slug: project.SLUG,
   }));
 }
 
-export default async function ProjectLayout({
-  params,
+export default function ProjectLayout({
+  children,
 }: {
-  params: { slug: string };
+  children: React.ReactNode;
 }) {
-  const project = getProject(params.slug);
-
-  return <Page project={project} />;
+  return <>{children}</>;
 }
