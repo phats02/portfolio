@@ -30,7 +30,7 @@ export default function Page() {
   return (
     <section className="pt-12 flex flex-col text-base font-normal text-primary/90">
       <div className="size-full border-l border-muted-foreground pl-4 transition-all duration-300 hover:border-primary">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between">
           <h1 className="text-xl">{project[0]}</h1>
 
           <p className="flex items-center gap-2 text-sm">
@@ -52,8 +52,8 @@ export default function Page() {
 
         <Image src={project[1].IMAGE} alt={project[0]} className="py-4" />
 
-        <div className="grid grid-cols-3 gap-4 items-start">
-          <ul className="list-disc pl-3 text-sm text-muted-foreground text-justify col-span-2">
+        <div className="grid sm:grid-cols-3 gap-4 items-start">
+          <ul className="list-disc pl-3 text-sm text-muted-foreground text-justify sm:col-span-2">
             {project[1].DESCRIPTION.map((desc, index) => (
               <li key={index}>
                 <span>{desc}</span>
