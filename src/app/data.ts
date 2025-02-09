@@ -2,6 +2,16 @@ import LibraryImage from "@/assets/library.png";
 import NotesImage from "@/assets/notes-markdown.png";
 import TodoImage from "@/assets/todo.png";
 
+export interface IProjectData {
+  SLUG: string;
+  LIVE_PREVIEW?: string;
+  GITHUB?: string;
+  DESCRIPTION: string[];
+  NOTE?: string;
+  TECH_STACK: string[];
+  IMAGE: any;
+}
+
 export const DATA = {
   HEADER: {
     NAME: "Utkarsh Singhal",
@@ -98,7 +108,7 @@ export const DATA = {
 
   PROJECTS: {
     "Digital Library, VIPS-TC": {
-      TITLE: "digital-library",
+      SLUG: "digital-library",
       LIVE_PREVIEW: "https://btech.library.vips.edu/",
       DESCRIPTION: [
         "Developed and launched a functional library website for a technical institution.",
@@ -109,7 +119,7 @@ export const DATA = {
       IMAGE: LibraryImage,
     },
     "ToDo Extension with Chrome Storage API": {
-      TITLE: "todo-extension",
+      SLUG: "todo-extension",
       LIVE_PREVIEW: "https://todo-extension-webapp.vercel.app/",
       GITHUB: "https://github.com/Utkarsh-Singhal-26/todo-extension",
       DESCRIPTION: [
@@ -130,7 +140,7 @@ export const DATA = {
       IMAGE: TodoImage,
     },
     "Notes Markdown App": {
-      TITLE: "notes-markdown-app",
+      SLUG: "notes-markdown-app",
       GITHUB: "https://github.com/Utkarsh-Singhal-26/notes-desktop-app",
       DESCRIPTION: [
         "Developed a cross-platform desktop application for managing notes with markdown support",
@@ -180,3 +190,9 @@ export const DATA = {
     "Tools & Platforms": ["Git", "GitHub", "Postman", "Visual Studio Code"],
   },
 };
+
+export function getProjectData(title: string) {
+  return Object.entries(DATA.PROJECTS).find(
+    ([, value]) => value.SLUG === title
+  ) as [string, IProjectData] | undefined;
+}

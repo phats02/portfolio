@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/sections";
 
-export default function ProjectLayout({
+export default function ProjectsLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (

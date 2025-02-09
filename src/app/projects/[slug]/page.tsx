@@ -1,26 +1,14 @@
 "use client";
 
-import { DATA } from "@/app/data";
+import { IProjectData } from "@/app/data";
 import { ArrowUpRight } from "lucide-react";
-import Image, { StaticImageData } from "next/image";
-import { useParams } from "next/navigation";
+import Image from "next/image";
 
-interface IProjectData {
-  TITLE: string;
-  LIVE_PREVIEW?: string;
-  GITHUB?: string;
-  DESCRIPTION: string[];
-  NOTE?: string;
-  TECH_STACK: string[];
-  IMAGE: StaticImageData;
-}
-
-export default function Page() {
-  const title = useParams().title;
-  const project = Object.entries(DATA.PROJECTS).find(
-    ([, value]) => value.TITLE === title
-  ) as [string, IProjectData];
-
+export default function Page({
+  project,
+}: {
+  project: [string, IProjectData] | undefined;
+}) {
   if (!project) {
     return (
       <div className="pt-12 text-center text-primary/60">Project not found</div>
@@ -83,7 +71,7 @@ export default function Page() {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 text-sm text-muted-foreground"
-          href={DATA.ALL_PROJECTS}
+          href="/projects"
         >
           View all projects
         </a>
