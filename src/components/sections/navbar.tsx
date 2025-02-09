@@ -18,18 +18,21 @@ export function Navbar() {
 
   return (
     <header className="flex justify-between items-end">
-      <MovingElement change={() => router.push("/")}>
-        <Link href={"/"}>
-          <span className="tracking-tighter font-bold text-xl">utkarsh.</span>
+      <MovingElement
+        change={() => router.push("/")}
+        ariaLabel="Navigate to home"
+      >
+        <Link href={"/"} className="tracking-tighter font-bold text-xl">
+          utkarsh.
         </Link>
       </MovingElement>
 
       <nav className="flex items-center gap-2">
         <ul className="flex items-center gap-2 sm:gap-0">
           {["experience", "projects"].map((link, index) => (
-            <AnimatedText key={index} href={`/#${link}`}>
-              {link}
-            </AnimatedText>
+            <li key={index}>
+              <AnimatedText href={`/#${link}`}>{link}</AnimatedText>
+            </li>
           ))}
         </ul>
 
@@ -40,6 +43,9 @@ export function Navbar() {
               theme === "dark"
                 ? () => setTheme("light")
                 : () => setTheme("dark")
+            }
+            ariaLabel={
+              theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
             }
           >
             {theme === "dark" ? <Moon /> : <Sun />}

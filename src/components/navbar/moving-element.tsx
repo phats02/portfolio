@@ -12,6 +12,7 @@ interface MovingElementProps {
   className?: string;
   change?: () => void;
   toChange?: boolean;
+  ariaLabel: string;
 }
 
 export const MovingElement: React.FC<MovingElementProps> = ({
@@ -19,6 +20,7 @@ export const MovingElement: React.FC<MovingElementProps> = ({
   className = "",
   change,
   toChange = true,
+  ariaLabel,
 }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -68,14 +70,9 @@ export const MovingElement: React.FC<MovingElementProps> = ({
     >
       <Button
         variant={toChange ? "ghost" : undefined}
-        onMouseEnter={(e) =>
-          toChange && e.currentTarget.setAttribute("variant", "secondary")
-        }
-        onMouseLeave={(e) =>
-          toChange && e.currentTarget.setAttribute("variant", "ghost")
-        }
         onClick={change}
         className={className}
+        aria-label={ariaLabel}
       >
         <motion.span style={{ x: textX, y: textY }}>{children}</motion.span>
       </Button>
