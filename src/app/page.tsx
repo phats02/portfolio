@@ -1,17 +1,29 @@
-import Home from "@/components/home";
-import Contact from "@/components/home/contact";
-import Experience from "@/components/home/experience";
-import Projects from "@/components/home/projects";
-import Skills from "@/components/home/skills";
+"use client";
+
+import { DATA } from "@/app/data";
+import {
+  AboutMe,
+  Experience,
+  Footer,
+  Header,
+  Navbar,
+  Projects,
+  Skills,
+} from "@/components/sections";
 
 export default function Page() {
   return (
-    <div className="w-[90%] lg:w-[70%] xl:w-[50%] my-8 flex flex-col items-center gap-16">
-      <Home />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Contact />
+    <div className="bg-background text-foreground mx-auto px-4 w-full lg:w-2/3 xl:w-1/2 pt-6 sm:pt-12">
+      <Navbar />
+
+      <main className="min-h-lvh px-4">
+        <Header data={DATA.HEADER} />
+        <AboutMe data={DATA.ABOUT_ME} />
+        <Experience data={DATA.EXPERIENCE} />
+        <Projects data={DATA.PROJECTS} all={DATA.ALL_PROJECTS} />
+        <Skills data={DATA.SKILLS} />
+        <Footer />
+      </main>
     </div>
   );
 }
