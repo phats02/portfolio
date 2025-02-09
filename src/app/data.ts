@@ -1,6 +1,7 @@
 import LibraryImage from "@/assets/library.png";
 import NotesImage from "@/assets/notes-markdown.png";
 import TodoImage from "@/assets/todo.png";
+import { StaticImageData } from "next/image";
 
 export interface IProjectData {
   SLUG: string;
@@ -9,7 +10,7 @@ export interface IProjectData {
   DESCRIPTION: string[];
   NOTE?: string;
   TECH_STACK: string[];
-  IMAGE: any;
+  IMAGE: StaticImageData;
 }
 
 export const DATA = {
