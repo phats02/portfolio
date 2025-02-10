@@ -1,5 +1,5 @@
 import LibraryImage from "@/assets/library.png";
-import NotesImage from "@/assets/notes-markdown.png";
+import SkygazeImage from "@/assets/skygaze.png";
 import TodoImage from "@/assets/todo.png";
 import { StaticImageData } from "next/image";
 import { cache } from "react";
@@ -109,6 +109,24 @@ export const DATA = {
   },
 
   PROJECTS: {
+    "Skygaze India": {
+      SLUG: "skygaze-india",
+      LIVE_PREVIEW: "https://www.skygazeindia.com/",
+      DESCRIPTION: [
+        "Integrated the Razorpay payment gateway to enable secure and seamless transactions",
+        "Built a high-performance UI using Next.js and TypeScript, optimizing user experience and system efficiency.",
+      ],
+      TECH_STACK: [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Razorpay",
+        "Firebase",
+        "GCP",
+      ],
+      IMAGE: SkygazeImage,
+    },
     "Digital Library, VIPS-TC": {
       SLUG: "digital-library",
       LIVE_PREVIEW: "https://btech.library.vips.edu/",
@@ -140,18 +158,6 @@ export const DATA = {
         "Message Broadcasting",
       ],
       IMAGE: TodoImage,
-    },
-    "Notes Markdown App": {
-      SLUG: "notes-markdown-app",
-      GITHUB: "https://github.com/Utkarsh-Singhal-26/notes-desktop-app",
-      DESCRIPTION: [
-        "Developed a cross-platform desktop application for managing notes with markdown support",
-        "Implemented live markdown preview and local file-based storage for persistence",
-        "Enhanced user experience with a responsive and intuitive interface",
-      ],
-      NOTE: "Note: This app is not published on any platform.",
-      TECH_STACK: ["Electron.js", "React.js", "Tailwind CSS", "Markdown"],
-      IMAGE: NotesImage,
     },
   },
 

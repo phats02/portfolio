@@ -27,7 +27,7 @@ export function Experience({
                 <div>
                   <p className="text-lg text-primary/90">
                     {value.POSITION}{" "}
-                    <span className="ml-2 rounded bg-secondary px-2 py-1 text-xs">
+                    <span className="ml-2 rounded bg-secondary px-2 py-1 text-xs inline-block max-sm:mb-2">
                       {value.LOCATION}
                     </span>
                   </p>
