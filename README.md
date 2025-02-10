@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Portfolio
 
-## Getting Started
+[🔗 Live Preview](https://utkarsh-singhal.tech/)
 
-First, run the development server:
+Welcome to my personal portfolio repository! This project showcases my work, skills, and experience through a modern, responsive, and dynamic web application built with Next.js and Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+- **Framework**: Next.js
+- **Language**: TypeScript
+- **UI Components**: shadcn
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Code Formatting**: Prettier
+- **Deployment**: Vercel
+- **Linting**: ESLint
+
+## 📁 Project Structure
+
+```sh
+.
+├── README.md                # Project documentation
+├── components.json          # Component metadata
+├── eslint.config.mjs        # ESLint configuration
+├── next.config.ts           # Next.js configuration
+├── package.json             # Dependencies and scripts
+├── postcss.config.mjs       # PostCSS configuration
+├── tailwind.config.ts       # Tailwind CSS configuration
+├── tsconfig.json            # TypeScript configuration
+├── src
+│   ├── app
+│   │   ├── data.ts          # Data file
+│   │   ├── favicon.ico      # Favicon
+│   │   ├── globals.css      # Global styles
+│   │   ├── layout.tsx       # Root layout
+│   │   ├── not-found.tsx    # 404 page
+│   │   ├── page.tsx         # Home page
+│   │   ├── projects
+│   │   │   └── [slug]
+│   │   │       ├── layout.tsx
+│   │   │       └── page.tsx
+│   │   └── sitemap.ts       # Sitemap
+│   ├── assets               # Static assets
+│   ├── components           # Reusable UI components
+│   │   ├── navbar           # Navbar components
+│   │   ├── sections         # Different sections (About, Projects, etc.)
+│   │   └── ui               # UI components (e.g., buttons)
+│   └── lib                  # Utility functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Dynamic Project Pages**: Uses Next.js dynamic routing for individual project pages.
+- **Responsive Design**: Optimized for all screen sizes using Tailwind CSS.
+- **Smooth Animations**: Framer Motion provides fluid animations for a better user experience.
+- **Modular Components**: Organized UI components with shadcn for better maintainability.
+- **SEO Optimized**: Implements best practices for SEO and performance.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation & Setup
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```sh
+   git clone https://github.com/Utkarsh-Singhal-26/portfolio-website.git
+   cd portfolio-website
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```sh
+   yarn
+   ```
 
-## Deploy on Vercel
+3. Run the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```sh
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📌 Deployment
+
+This portfolio can be easily deployed using **Vercel**.
+
+To deploy on Vercel:
+
+1. Install Vercel CLI:
+   ```sh
+   npm install -g vercel
+   ```
+2. Run:
+   ```sh
+   vercel
+   ```
+3. Follow the CLI instructions to deploy!
+
+---
+
+Feel free to reach out if you have any questions or suggestions. 🚀
