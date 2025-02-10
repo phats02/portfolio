@@ -61,8 +61,8 @@ Welcome to my personal portfolio repository! This project showcases my work, ski
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/Utkarsh-Singhal-26/portfolio-website.git
-   cd portfolio-website
+   git clone https://github.com/Utkarsh-Singhal-26/portfolio.git
+   cd portfolio
    ```
 
 2. Install dependencies:
