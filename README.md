@@ -1,6 +1,6 @@
 # My Portfolio
 
-[🔗 Live Preview](https://utkarsh-singhal.tech/)
+[🔗 Live Preview](https://utkarsh-singhal.is-a.dev/)
 
 Welcome to my personal portfolio repository! This project showcases my work, skills, and experience through a modern, responsive, and dynamic web application built with Next.js and Tailwind CSS.
 
