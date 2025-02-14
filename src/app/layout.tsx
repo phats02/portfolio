@@ -14,22 +14,28 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Utkarsh Singhal | Software Developer",
   description:
-    "Full-stack developer specializing in React, Next.js, and TypeScript.",
+    "Software developer specializing in Next.js, TypeScript and Node.js.",
   openGraph: {
     title: "Utkarsh Singhal | Software Developer",
-    description: "Building scalable web applications with modern technologies.",
+    description:
+      "Software developer specializing in Next.js, TypeScript, and Node.js. Experienced in building scalable, high-performance applications.",
+    url: "https://utkarsh-singhal.is-a.dev/",
+    type: "website",
     images: [
       {
-        url: "https://avatars.githubusercontent.com/u/118098216",
+        url: "https://utkarsh-singhal.is-a.dev/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Utkarsh Singhal",
+        alt: "Utkarsh Singhal | Software Developer",
       },
     ],
-    url: "https://utkarsh-singhal.tech",
-    type: "website",
   },
-  authors: [{ name: "Utkarsh Singhal", url: "https://utkarsh-singhal.tech" }],
+  twitter: {
+    card: "summary_large_image",
+  },
+  authors: [
+    { name: "Utkarsh Singhal", url: "https://utkarsh-singhal.is-a.dev/" },
+  ],
   keywords: [
     "Utkarsh Singhal",
     "Software Developer",
@@ -39,6 +45,10 @@ export const metadata: Metadata = {
     "TypeScript",
     "Node.js",
     "AWS",
+    "GCP",
+    "MongoDB",
+    "Firebase",
+    "Tailwind CSS",
     "Web Development",
   ],
   creator: "Utkarsh Singhal",
