@@ -9,12 +9,22 @@ import { AnimatedText, MovingElement } from "../navbar";
 
 export function Navbar() {
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  const toggleTheme = () => {
+    const nextTheme =
+      resolvedTheme === "dark"
+        ? "light"
+        : resolvedTheme === "light"
+          ? "dark"
+          : "system";
+    setTheme(nextTheme);
+  };
 
   return (
     <header className="flex justify-between items-end">
@@ -39,16 +49,12 @@ export function Navbar() {
         {isMounted && (
           <MovingElement
             className="rounded-full p-[10px]"
-            change={
-              theme === "dark"
-                ? () => setTheme("light")
-                : () => setTheme("dark")
-            }
-            ariaLabel={
-              theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-            }
+            change={toggleTheme}
+            ariaLabel={`Switch to ${
+              resolvedTheme === "dark" ? "light" : "dark"
+            } mode`}
           >
-            {theme === "dark" ? <Moon /> : <Sun />}
+            {resolvedTheme === "dark" ? <Moon /> : <Sun />}
           </MovingElement>
         )}
       </nav>
