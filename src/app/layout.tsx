@@ -3,7 +3,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Outfit } from "next/font/google";
-import Head from "next/head";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -63,12 +62,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${outfit.variable}`} suppressHydrationWarning>
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="VDwFh_D1CuZ99dn0xRnrfO_2lEOvp-0O3GueEFSQHeI"
-        />
-      </Head>
       <body
         className={`${outfit.className} w-screen min-h-screen m-0 p-0 overflow-x-hidden`}
       >
