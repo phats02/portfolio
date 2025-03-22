@@ -12,6 +12,7 @@ export interface IProjectData {
   NOTE?: string;
   TECH_STACK: string[];
   IMAGE: StaticImageData;
+  HIDDEN: boolean;
 }
 
 export const DATA = {
@@ -127,6 +128,7 @@ export const DATA = {
         "Razorpay",
       ],
       IMAGE: SkygazeImage,
+      HIDDEN: false,
     },
     "Digital Library, VIPS-TC": {
       SLUG: "digital-library",
@@ -138,6 +140,26 @@ export const DATA = {
       ],
       TECH_STACK: ["React.js", "Tailwind CSS", "Firebase"],
       IMAGE: LibraryImage,
+      HIDDEN: false,
+    },
+    MailProof: {
+      SLUG: "mailproof",
+      LIVE_PREVIEW: "https://www.npmjs.com/package/mailproof",
+      DESCRIPTION: [
+        "Developed an email validation library that checks email format, MX records, and SMTP server response.",
+        "Implemented filtering of disposable email addresses to improve data quality.",
+        "Designed with configurable DNS servers, timeouts, and SMTP sender options.",
+        "Published as an npm package for easy integration into Node.js applications.",
+      ],
+      TECH_STACK: [
+        "Node.js",
+        "TypeScript",
+        "DNS",
+        "SMTP",
+        "Regex",
+        "NPM Package",
+      ],
+      HIDDEN: true,
     },
     "ToDo Extension with Chrome Storage API": {
       SLUG: "todo-extension",
@@ -159,6 +181,7 @@ export const DATA = {
         "Message Broadcasting",
       ],
       IMAGE: TodoImage,
+      HIDDEN: false,
     },
   },
 
@@ -208,7 +231,7 @@ export const DATA = {
 
 export const getProjectData = cache(
   (title: string) =>
-    Object.entries(DATA.PROJECTS).find(([, value]) => value.SLUG === title) as
-      | [string, IProjectData]
-      | undefined
+    Object.entries(DATA.PROJECTS).find(
+      ([, value]) => value.SLUG === title && !value.HIDDEN
+    ) as [string, IProjectData] | undefined
 );

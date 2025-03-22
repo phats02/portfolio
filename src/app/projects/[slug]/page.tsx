@@ -1,6 +1,7 @@
 import { DATA, getProjectData } from "@/app/data";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -11,9 +12,7 @@ export default async function Page({ params }: PageProps) {
   const project = getProjectData(resolvedParams.slug);
 
   if (!project) {
-    return (
-      <div className="pt-12 text-center text-primary/60">Project not found</div>
-    );
+    notFound();
   }
 
   return (
