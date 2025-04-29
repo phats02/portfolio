@@ -19,7 +19,7 @@ export function Projects({
     <div id="projects" className="py-10">
       <h2 className="text-base font-medium text-primary/90">projects.</h2>
 
-      <ul className="mt-4 grid md:grid-cols-2 gap-12 text-base font-normal text-primary/90">
+      <ul className="mt-4 flex flex-col gap-12 text-base font-normal text-primary/90">
         {Object.entries(data).map(([key, value]) => (
           <li key={key}>
             <div className="size-full border-l border-muted-foreground pl-4 transition-all duration-300 hover:border-primary">
@@ -48,7 +48,7 @@ export function Projects({
                 </div>
               </div>
 
-              <ul className="mt-4 list-disc space-y-1 pl-3 text-sm text-muted-foreground text-justify">
+              <ul className="mt-1 list-disc space-y-1 pl-3 text-sm text-muted-foreground text-justify">
                 {value.DESCRIPTION.map((desc, index) => (
                   <li key={index}>
                     <span>{desc}</span>

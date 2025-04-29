@@ -48,7 +48,7 @@ export function Experience({
                 </p>
               </div>
 
-              <ul className="mt-4 list-disc space-y-1 pl-3 text-sm text-muted-foreground text-justify">
+              <ul className="mt-1 list-disc space-y-1 pl-3 text-sm text-muted-foreground text-justify">
                 {value.DESCRIPTION.map((desc, index) => (
                   <li key={index}>
                     <span>{desc}</span>
