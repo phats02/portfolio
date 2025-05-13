@@ -42,7 +42,7 @@ export const DATA = {
       WEBSITE: "https://www.aardosolutions.com/",
       POSITION: "Software Developer",
       LOCATION: "Remote",
-      DURATION: "Sept, 2024 - Present",
+      DURATION: "Nov, 2024 - Present",
       DESCRIPTION: [
         "Developed and maintained scalable web applications to enhance user engagement and operational efficiency.",
         "Hosted and managed servers on AWS EC2, configured domains, and implemented SSL certificates for secure access.",
