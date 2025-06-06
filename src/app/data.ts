@@ -23,7 +23,7 @@ export const DATA = {
     HEADLINE:
       "Passionate about building high-performance and scalable web applications.",
     RESUME:
-      "https://drive.google.com/file/d/1rlP_GVlMjDWb1pNgw2V5QzOg8SJzdffy/view",
+      "https://drive.google.com/file/d/11WCq65Q4g0y9goGqGehffbBdRkZ0u1jB/view",
     EMAIL: "mailto:singhalutkarsh26@gmail.com",
     GITHUB: "https://github.com/Utkarsh-Singhal-26",
     LINKEDIN: "https://www.linkedin.com/in/singhalutkarsh26",
