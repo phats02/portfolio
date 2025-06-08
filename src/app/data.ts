@@ -205,26 +205,31 @@ export const DATA = {
     Frameworks: [
       "React.js",
       "Next.js",
+      "Angular",
       "Astro",
       "Express.js",
       "React Native",
       "Expo",
       "Electron",
+      "PWA"
     ],
     Libraries: [
-      "TanStack Query",
-      "Zod",
+      "React Query",
       "Tailwind CSS",
-      "ShadCN",
-      "Material UI",
+      "ShadCN UI",
       "Ant Design",
+      "Styled Components",
+      "Material UI",
     ],
     "Database & Backend": [
       "MongoDB",
-      "Firebase",
       "Redis",
       "Contentful",
+      "Firebase",
       "GraphQL",
+      "JWT",
+      "Auth.js",
+      "Clerk",
     ],
     "Cloud & Deployment": [
       "Google Cloud Platform (GCP)",
@@ -234,11 +239,20 @@ export const DATA = {
     "Tools & Platforms": [
       "Git",
       "GitHub",
-      "Razorpay",
       "Postman",
+      "Docker",
       "Visual Studio Code",
+      "Prettier",
+      "Sentry",
     ],
-  },
+    "Package Managers & Build Tools": [
+      "NPM",
+      "PNPM",
+      "Yarn",
+      "Bun",
+      "Vite",
+    ],
+  };
 };
 
 export const getProjectData = cache(
