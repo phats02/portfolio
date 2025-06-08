@@ -252,7 +252,7 @@ export const DATA = {
       "Bun",
       "Vite",
     ],
-  };
+  }
 };
 
 export const getProjectData = cache(
