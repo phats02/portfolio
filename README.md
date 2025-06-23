@@ -1,4 +1,4 @@
-# My Portfolio
+# Portfolio
 
 [🔗 Live Preview](https://utkarsh-singhal.is-a.dev/)
 
@@ -17,35 +17,43 @@ Welcome to my personal portfolio repository! This project showcases my work, ski
 
 ## 📁 Project Structure
 
-```sh
+```ts
 .
-├── README.md                # Project documentation
-├── components.json          # Component metadata
-├── eslint.config.mjs        # ESLint configuration
-├── next.config.ts           # Next.js configuration
-├── package.json             # Dependencies and scripts
-├── postcss.config.mjs       # PostCSS configuration
-├── tailwind.config.ts       # Tailwind CSS configuration
-├── tsconfig.json            # TypeScript configuration
-├── src
-│   ├── app
-│   │   ├── data.ts          # Data file
-│   │   ├── favicon.ico      # Favicon
-│   │   ├── globals.css      # Global styles
-│   │   ├── layout.tsx       # Root layout
-│   │   ├── not-found.tsx    # 404 page
-│   │   ├── page.tsx         # Home page
-│   │   ├── projects
-│   │   │   └── [slug]
-│   │   │       ├── layout.tsx
-│   │   │       └── page.tsx
-│   │   └── sitemap.ts       # Sitemap
-│   ├── assets               # Static assets
-│   ├── components           # Reusable UI components
-│   │   ├── navbar           # Navbar components
-│   │   ├── sections         # Different sections (About, Projects, etc.)
-│   │   └── ui               # UI components (e.g., buttons)
-│   └── lib                  # Utility functions
+├── .env.sample                 # Sample environment variables
+├── .gitignore                  # Git ignored files and directories
+├── .prettierignore             # Files ignored by Prettier
+├── .prettierrc                 # Prettier configuration
+├── README.md                   # Project documentation
+├── components.json             # Component metadata for shadcn
+├── eslint.config.mjs           # ESLint configuration
+├── next-env.d.ts               # TypeScript definitions for Next.js
+├── next.config.ts              # Next.js custom configuration
+├── package.json                # Project metadata and dependencies
+├── postcss.config.mjs          # PostCSS plugins configuration
+├── public
+│   └── robots.txt              # SEO configuration for search engine crawlers
+├── src                         # Source code directory
+│   ├── app                     # Application routes and layout
+│   │   ├── data.ts             # Data used across the app (e.g., projects list)
+│   │   ├── favicon.ico         # Favicon icon
+│   │   ├── globals.css         # Global CSS styles
+│   │   ├── layout.tsx          # Root layout wrapper
+│   │   ├── not-found.tsx       # Custom 404 Not Found page
+│   │   ├── opengraph-image.png    # Image used for Open Graph meta tags
+│   │   ├── page.tsx            # Home page component
+│   │   ├── projects            # Dynamic project pages
+│   │   │   └── [slug]          # Route for individual project page
+│   │   │       ├── layout.tsx     # Layout for individual project
+│   │   │       └── page.tsx       # Project detail page
+│   │   └── sitemap.ts          # Generates sitemap for SEO
+│   ├── assets                  # Static image assets
+│   ├── components              # Reusable and modular UI components
+│   │   ├── navbar              # Components related to navigation bar
+│   │   ├── sections            # Sections for main pages (about, projects, etc.)
+│   │   └── ui                  # Base UI components
+│   └── lib                     # Utility and helper functions
+├── tailwind.config.ts          # Tailwind CSS configuration
+└── tsconfig.json               # TypeScript compiler options
 ```
 
 ## 🌟 Features
