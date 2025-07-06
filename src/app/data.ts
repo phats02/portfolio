@@ -72,7 +72,7 @@ export const DATA = {
         WEBSITE: "https://vips.edu/",
         POSITION: "Software Developer Intern",
         LOCATION: "Hybrid - Delhi, India",
-        DURATION: "Nov, 2023 - Present",
+        DURATION: "Nov, 2023 - Jun, 2025",
         DESCRIPTION: [
           "Assisted in the development of full-stack applications to support academic initiatives.",
           "Implemented cloud-based solutions using Google Cloud Platform (GCP) services.",
