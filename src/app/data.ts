@@ -167,7 +167,7 @@ export const DATA = {
   },
 
   ALL_PROJECTS:
-    "https://github.com/stars/Utkarsh-Singhal-26/lists/projects-man-technologist",
+    "https://github.com/Utkarsh-Singhal-26?tab=repositories",
 
   BLOGS: {
     "ORMs & ODMs: Choosing the Right Tool for Your Database Needs": {
