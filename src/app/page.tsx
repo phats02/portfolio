@@ -11,13 +11,14 @@ import {
   Projects,
   Skills,
 } from "@/components/sections";
+import TargetCursor from "@/components/ui/target-cursor";
 
 export default function Page() {
   return (
-    <div className="bg-background text-foreground mx-auto px-4 w-full lg:w-2/3 xl:w-1/2 pt-6 sm:pt-12">
+    <div className="bg-background mx-auto px-4 pt-6 sm:pt-12 w-full lg:w-2/3 xl:w-1/2 text-foreground">
       <Navbar />
 
-      <main className="min-h-lvh px-4">
+      <main className="px-4 min-h-lvh">
         <Header data={DATA.HEADER} />
         <AboutMe data={DATA.ABOUT_ME} />
         <Experience data={DATA.EXPERIENCE} />
@@ -26,6 +27,8 @@ export default function Page() {
         <Skills data={DATA.SKILLS} />
         <Footer />
       </main>
+
+      <TargetCursor spinDuration={2} hideDefaultCursor />
     </div>
   );
 }

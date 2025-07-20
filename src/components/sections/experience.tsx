@@ -17,17 +17,17 @@ export function Experience({
 }) {
   return (
     <div id="experience" className="py-10">
-      <h2 className="text-base font-medium text-primary/90">experience.</h2>
+      <h2 className="font-medium text-primary/90 text-base">experience.</h2>
 
-      <ul className="mt-4 flex flex-col gap-12 text-base font-normal text-primary/90">
+      <ul className="flex flex-col gap-12 mt-4 font-normal text-primary/90 text-base">
         {Object.entries(data).map(([key, value]) => (
-          <li key={key}>
-            <div className="size-full border-l border-muted-foreground pl-4 transition-all duration-300 hover:border-primary">
-              <div className="flex flex-col items-start justify-between sm:flex-row">
+          <li key={key} className="cursor-target">
+            <div className="pl-4 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300">
+              <div className="flex sm:flex-row flex-col justify-between items-start">
                 <div>
-                  <p className="text-lg text-primary/90">
+                  <p className="text-primary/90 text-lg">
                     {value.POSITION}{" "}
-                    <span className="ml-2 rounded bg-secondary px-2 py-1 text-xs inline-block max-sm:mb-2">
+                    <span className="inline-block bg-secondary max-sm:mb-2 ml-2 px-2 py-1 rounded text-xs">
                       {value.LOCATION}
                     </span>
                   </p>
@@ -36,19 +36,19 @@ export function Experience({
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="ml-1 flex items-center gap-1"
+                      className="flex items-center gap-1 ml-1"
                       href={value.WEBSITE}
                     >
                       {extractDomain(value.WEBSITE)} <ArrowUpRight size={18} />
                     </a>
                   </p>
                 </div>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   {value.DURATION}
                 </p>
               </div>
 
-              <ul className="mt-1 list-disc space-y-1 pl-3 text-sm text-muted-foreground text-justify">
+              <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
                 {value.DESCRIPTION.map((desc, index) => (
                   <li key={index}>
                     <span>{desc}</span>
@@ -56,11 +56,11 @@ export function Experience({
                 ))}
               </ul>
 
-              <ul className="mt-2 flex flex-wrap items-center gap-2 pl-3">
+              <ul className="flex flex-wrap items-center gap-2 mt-2 pl-3">
                 {value.TECH_STACK.map((tech, index) => (
                   <li
                     key={index}
-                    className="rounded bg-muted px-2 py-1 text-xs"
+                    className="bg-muted px-2 py-1 rounded text-xs"
                   >
                     {tech}
                   </li>

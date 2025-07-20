@@ -9,15 +9,15 @@ export function Header({ data }: { data: Record<string, string> }) {
   return (
     <section className="pt-12">
       <div className="space-y-2">
-        <p className="text-base font-normal text-muted-foreground">
+        <p className="font-normal text-muted-foreground text-base">
           hi there👋, I&apos;m
         </p>
 
         <div>
-          <h1 className="text-4xl font-bold tracking-tight text-primary/90">
+          <h1 className="font-bold text-primary/90 text-4xl tracking-tight">
             {data.NAME}
           </h1>
-          <h2 className="flex flex-col gap-0 text-base font-normal text-primary/90">
+          <h2 className="flex flex-col gap-0 font-normal text-primary/90 text-base">
             <p>
               {data.AGE}, {data.PRONOUN}
             </p>
@@ -27,7 +27,7 @@ export function Header({ data }: { data: Record<string, string> }) {
 
         <div className="flex items-center gap-2 text-sm">
           <MovingElement
-            className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow betterhover:hover:bg-primary/90 h-9 px-4 py-2"
+            className="inline-flex justify-center items-center bg-primary betterhover:hover:bg-primary/90 disabled:opacity-50 shadow px-4 py-2 rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring h-9 font-medium text-primary-foreground text-sm whitespace-nowrap transition-colors disabled:pointer-events-none"
             change={() => handleChange(data.RESUME)}
             toChange={false}
             ariaLabel="Resume"

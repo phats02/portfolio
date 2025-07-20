@@ -17,15 +17,15 @@ export function Projects({
 }) {
   return (
     <div id="projects" className="py-10">
-      <h2 className="text-base font-medium text-primary/90">projects.</h2>
+      <h2 className="font-medium text-primary/90 text-base">projects.</h2>
 
-      <ul className="mt-4 flex flex-col gap-12 text-base font-normal text-primary/90">
+      <ul className="flex flex-col gap-12 mt-4 font-normal text-primary/90 text-base">
         {Object.entries(data).map(([key, value]) => (
-          <li key={key}>
-            <div className="size-full border-l border-muted-foreground pl-4 transition-all duration-300 hover:border-primary">
-              <div className="flex items-start justify-between">
+          <li key={key} className="cursor-target">
+            <div className="pl-4 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300">
+              <div className="flex justify-between items-start">
                 <div>
-                  <p className="text-lg text-primary/90">{key}</p>
+                  <p className="text-primary/90 text-lg">{key}</p>
 
                   <p className="flex items-center gap-1 text-sm">
                     {value.LIVE_PREVIEW && (
@@ -48,7 +48,7 @@ export function Projects({
                 </div>
               </div>
 
-              <ul className="mt-1 list-disc space-y-1 pl-3 text-sm text-muted-foreground text-justify">
+              <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
                 {value.DESCRIPTION.map((desc, index) => (
                   <li key={index}>
                     <span>{desc}</span>
@@ -56,11 +56,11 @@ export function Projects({
                 ))}
               </ul>
 
-              <ul className="mt-2 flex flex-wrap items-center gap-2 pl-3">
+              <ul className="flex flex-wrap items-center gap-2 mt-2 pl-3">
                 {value.TECH_STACK.map((tech, index) => (
                   <li
                     key={index}
-                    className="rounded bg-muted px-2 py-1 text-xs"
+                    className="bg-muted px-2 py-1 rounded text-xs"
                   >
                     {tech}
                   </li>
@@ -71,11 +71,11 @@ export function Projects({
         ))}
       </ul>
 
-      <div className="mt-8 flex justify-center">
+      <div className="flex justify-center mt-8">
         <a
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 text-sm text-muted-foreground"
+          className="inline-flex justify-center items-center bg-background hover:bg-accent disabled:opacity-50 shadow-sm px-4 py-2 border border-input rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring h-9 font-medium text-muted-foreground text-sm whitespace-nowrap transition-colors hover:text-accent-foreground cursor-target disabled:pointer-events-none"
           href={all}
         >
           View all projects

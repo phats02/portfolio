@@ -32,7 +32,7 @@ export function Navbar() {
         change={() => router.push("/")}
         ariaLabel="Navigate to home"
       >
-        <Link href={"/"} className="tracking-tighter font-bold text-xl">
+        <Link href={"/"} className="font-bold text-xl tracking-tighter">
           utkarsh.
         </Link>
       </MovingElement>
@@ -48,7 +48,7 @@ export function Navbar() {
 
         {isMounted && (
           <MovingElement
-            className="rounded-full p-[10px]"
+            className="p-[10px] rounded-full"
             change={toggleTheme}
             ariaLabel={`Switch to ${
               resolvedTheme === "dark" ? "light" : "dark"

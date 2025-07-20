@@ -125,7 +125,6 @@ export const DATA = {
         "Razorpay",
         "Firebase",
         "GCP",
-        "Razorpay",
       ],
       IMAGE: SkygazeImage,
       HIDDEN: false,
@@ -166,8 +165,7 @@ export const DATA = {
     },
   },
 
-  ALL_PROJECTS:
-    "https://github.com/Utkarsh-Singhal-26?tab=repositories",
+  ALL_PROJECTS: "https://github.com/Utkarsh-Singhal-26?tab=repositories",
 
   BLOGS: {
     "ORMs & ODMs: Choosing the Right Tool for Your Database Needs": {
@@ -205,13 +203,13 @@ export const DATA = {
     Frameworks: [
       "React.js",
       "Next.js",
-      "Angular",
+      "Vue.js",
       "Astro",
       "Express.js",
       "React Native",
       "Expo",
       "Electron",
-      "PWA"
+      "PWA",
     ],
     Libraries: [
       "React Query",
@@ -245,14 +243,8 @@ export const DATA = {
       "Prettier",
       "Sentry",
     ],
-    "Package Managers & Build Tools": [
-      "NPM",
-      "PNPM",
-      "Yarn",
-      "Bun",
-      "Vite",
-    ],
-  }
+    "Package Managers & Build Tools": ["NPM", "PNPM", "Yarn", "Bun", "Vite"],
+  },
 };
 
 export const getProjectData = cache(

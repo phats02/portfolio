@@ -10,7 +10,7 @@ export function Footer() {
 
   return (
     <button
-      className="mx-auto flex w-fit cursor-pointer flex-col items-center gap-0 py-10 text-muted-foreground"
+      className="flex flex-col items-center gap-0 mx-auto py-10 w-fit text-muted-foreground cursor-pointer"
       onClick={scrollToTop}
     >
       <p className="flex items-center gap-1">

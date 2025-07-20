@@ -10,17 +10,17 @@ interface IBlogData {
 export function Blogs({ data }: { data: Record<string, IBlogData> }) {
   return (
     <div id="blogs" className="py-10">
-      <h2 className="text-base font-medium text-primary/90">
+      <h2 className="font-medium text-primary/90 text-base">
         technical blogs.
       </h2>
 
-      <ul className="mt-4 flex flex-col gap-12 text-base font-normal text-primary/90">
+      <ul className="flex flex-col gap-12 mt-4 font-normal text-primary/90 text-base">
         {Object.entries(data).map(([key, value]) => (
-          <li key={key}>
-            <div className="size-full border-l border-muted-foreground pl-4 transition-all duration-300 hover:border-primary">
-              <p className="text-lg text-primary/90">
+          <li key={key} className="cursor-target">
+            <div className="pl-4 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300">
+              <p className="text-primary/90 text-lg">
                 {key}{" "}
-                <span className="ml-2 rounded bg-secondary px-2 py-1 text-xs inline-block max-sm:mb-2">
+                <span className="inline-block bg-secondary max-sm:mb-2 ml-2 px-2 py-1 rounded text-xs">
                   {value.DATE}
                 </span>
               </p>
@@ -39,7 +39,7 @@ export function Blogs({ data }: { data: Record<string, IBlogData> }) {
                 </span>
               </p>
 
-              <p className="line-clamp-3 text-sm text-muted-foreground text-justify mt-1">
+              <p className="mt-1 text-muted-foreground text-sm text-justify line-clamp-3">
                 {value.DESCRIPTION}
               </p>
             </div>

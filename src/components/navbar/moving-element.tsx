@@ -67,6 +67,7 @@ export const MovingElement: React.FC<MovingElementProps> = ({
         y.set(0);
       }}
       style={{ x, y }}
+      className="cursor-target"
     >
       <Button
         variant={toChange ? "ghost" : undefined}
