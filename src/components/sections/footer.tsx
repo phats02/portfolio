@@ -9,14 +9,17 @@ export function Footer() {
   }
 
   return (
-    <button
-      className="flex flex-col items-center gap-0 mx-auto py-10 w-fit text-muted-foreground cursor-pointer"
-      onClick={scrollToTop}
-    >
-      <p className="flex items-center gap-1">
+    <div className="flex max-md:flex-col justify-between items-center max-md:gap-2 mb-6 py-10 border-gray-800 border-t">
+      <p className="text-muted-foreground text-base text-center">
+        &copy; {new Date().getFullYear()} Utkarsh Singhal. All rights reserved.
+      </p>
+      <button
+        className="flex items-center gap-2 w-fit text-muted-foreground text-base cursor-pointer"
+        onClick={scrollToTop}
+      >
         Elevate to the top
         <ArrowUp size={20} />
-      </p>
-    </button>
+      </button>
+    </div>
   );
 }
