@@ -12,6 +12,7 @@ import {
   Projects,
   Skills,
 } from "@/components/sections";
+import GridPattern from "@/components/ui/grid-pattern";
 import TargetCursor from "@/components/ui/target-cursor";
 import useMobileDetection from "@/hooks/use-mobile";
 
@@ -19,8 +20,16 @@ export default function Page() {
   const checkMobile = useMobileDetection();
 
   return (
-    <div className="bg-background mx-auto px-4 pt-6 sm:pt-12 w-full lg:w-2/3 xl:w-1/2 text-foreground">
+    <div className="mx-auto px-4 pt-6 sm:pt-12 w-full lg:w-2/3 xl:w-1/2 text-foreground">
       <Navbar />
+
+      <GridPattern
+        width={30}
+        height={30}
+        x={-1}
+        y={-1}
+        className="[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
+      />
 
       <main className="px-4 min-h-lvh">
         <Header data={DATA.HEADER} />
