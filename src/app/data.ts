@@ -1,8 +1,7 @@
-import LibraryImage from "@/assets/library.png";
-import SkygazeImage from "@/assets/skygaze.png";
-import TodoImage from "@/assets/todo.png";
+import LibraryImage from "@/assets/library.webp";
+import SkygazeImage from "@/assets/skygaze.webp";
+import TodoImage from "@/assets/todo.webp";
 import { StaticImageData } from "next/image";
-import { cache } from "react";
 
 export interface IProjectData {
   SLUG: string;
@@ -165,8 +164,6 @@ export const DATA = {
     },
   },
 
-  ALL_PROJECTS: "https://github.com/Utkarsh-Singhal-26?tab=repositories",
-
   BLOGS: {
     "ORMs & ODMs: Choosing the Right Tool for Your Database Needs": {
       DATE: "March 24, 2025",
@@ -246,10 +243,3 @@ export const DATA = {
     "Package Managers & Build Tools": ["NPM", "PNPM", "Yarn", "Bun", "Vite"],
   },
 };
-
-export const getProjectData = cache(
-  (title: string) =>
-    Object.entries(DATA.PROJECTS).find(
-      ([, value]) => value.SLUG === title && !value.HIDDEN
-    ) as [string, IProjectData] | undefined
-);
