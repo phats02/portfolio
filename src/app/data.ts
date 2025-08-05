@@ -1,10 +1,14 @@
-import LibraryImage from "@/assets/library.webp";
-import SkygazeImage from "@/assets/skygaze.webp";
-import TodoImage from "@/assets/todo.webp";
 import { StaticImageData } from "next/image";
 
+import {
+  AirwatchImage,
+  LibraryImage,
+  SkygazeImage,
+  TodoImage,
+  VIPSImage,
+} from "@/assets";
+
 export interface IProjectData {
-  SLUG: string;
   LIVE_PREVIEW?: string;
   GITHUB?: string;
   DESCRIPTION: string[];
@@ -109,8 +113,38 @@ export const DATA = {
   },
 
   PROJECTS: {
+    "VIPS-TC": {
+      LIVE_PREVIEW: "https://vips.edu",
+      DESCRIPTION: [
+        "Contributed to the development and maintenance of the main VIPS-TC website.",
+        "Implemented various front-end features using modern React and Material UI libraries.",
+        "Ensured responsive design and cross-browser compatibility for a seamless user experience.",
+        "Collaborated with the team to enhance website performance and accessibility.",
+      ],
+      TECH_STACK: [
+        "React.js",
+        "Material UI",
+        "Axios",
+        "Firebase",
+        "Styled Components",
+        "Razorpay",
+        "XLSX",
+      ],
+      IMAGE: VIPSImage,
+      HIDDEN: false,
+    },
+    "Digital Library, VIPS-TC": {
+      LIVE_PREVIEW: "https://btech.library.vips.edu/",
+      DESCRIPTION: [
+        "Developed and launched a functional library website for a technical institution.",
+        "Implemented user-friendly interface to improve accessibility of library resources.",
+        "Designed responsive layout ensuring compatibility across desktop and mobile devices",
+      ],
+      TECH_STACK: ["React.js", "Tailwind CSS", "Firebase"],
+      IMAGE: LibraryImage,
+      HIDDEN: false,
+    },
     "Skygaze India": {
-      SLUG: "skygaze-india",
       LIVE_PREVIEW: "https://www.skygazeindia.com/",
       DESCRIPTION: [
         "Integrated the Razorpay payment gateway to enable secure and seamless transactions",
@@ -128,20 +162,30 @@ export const DATA = {
       IMAGE: SkygazeImage,
       HIDDEN: false,
     },
-    "Digital Library, VIPS-TC": {
-      SLUG: "digital-library",
-      LIVE_PREVIEW: "https://btech.library.vips.edu/",
+    "AirWatch PWA": {
+      LIVE_PREVIEW: "https://airwatch-pwa-app.vercel.app/",
+      GITHUB: "https://github.com/Utkarsh-Singhal-26/airwatch-pwa-app",
       DESCRIPTION: [
-        "Developed and launched a functional library website for a technical institution.",
-        "Implemented user-friendly interface to improve accessibility of library resources.",
-        "Designed responsive layout ensuring compatibility across desktop and mobile devices",
+        "Built a fully responsive, offline-capable Progressive Web App (PWA) using Next.js 15 to monitor air quality in real-time.",
+        "Integrated Firebase Cloud Messaging for push notifications and AI-powered smart insights using Groq SDK.",
+        "Implemented interactive charts with Recharts and Google Maps for detailed visualizations.",
+        "Designed a beautiful UI using TailwindCSS, ShadCN UI, and Lucide Icons with strong TypeScript typing and scalable architecture.",
       ],
-      TECH_STACK: ["React.js", "Tailwind CSS", "Firebase"],
-      IMAGE: LibraryImage,
+      TECH_STACK: [
+        "Next.js",
+        "ShadCN UI",
+        "Tailwind CSS",
+        "TypeScript",
+        "Firebase",
+        "Recharts",
+        "Google Maps API",
+        "Groq SDK",
+        "PWA",
+      ],
+      IMAGE: AirwatchImage,
       HIDDEN: false,
     },
     "ToDo Extension with Chrome Storage API": {
-      SLUG: "todo-extension",
       LIVE_PREVIEW: "https://todo-extension-webapp.vercel.app/",
       GITHUB: "https://github.com/Utkarsh-Singhal-26/todo-extension",
       DESCRIPTION: [
