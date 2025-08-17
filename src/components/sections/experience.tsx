@@ -17,7 +17,7 @@ export function Experience({
 }) {
   return (
     <div id="experience" className="py-10">
-      <h2 className="font-medium text-primary/90 text-base">experience.</h2>
+      <h2 className="font-medium text-primary/90 text-base">experience 👨🏼‍💻.</h2>
 
       <ul className="flex flex-col gap-12 mt-4 font-normal text-primary/90 text-base">
         {Object.entries(data).map(([key, value]) => (

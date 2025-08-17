@@ -1,5 +1,3 @@
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Outfit } from "next/font/google";
@@ -12,47 +10,47 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Utkarsh Singhal | Software Developer",
+  title: "Phat Tran | Software Developer",
   description:
     "Software developer specializing in Next.js, TypeScript and Node.js.",
-  openGraph: {
-    title: "Utkarsh Singhal | Software Developer",
-    description:
-      "Software developer specializing in Next.js, TypeScript, and Node.js. Experienced in building scalable, high-performance applications.",
-    url: "https://utkarsh-singhal.is-a.dev/",
-    type: "website",
-    images: [
-      {
-        url: "https://utkarsh-singhal.is-a.dev/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Utkarsh Singhal | Software Developer",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-  },
-  authors: [
-    { name: "Utkarsh Singhal", url: "https://utkarsh-singhal.is-a.dev/" },
-  ],
-  keywords: [
-    "Utkarsh Singhal",
-    "Software Developer",
-    "Full-Stack Developer",
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "AWS",
-    "GCP",
-    "MongoDB",
-    "Firebase",
-    "Tailwind CSS",
-    "Web Development",
-  ],
-  creator: "Utkarsh Singhal",
-  publisher: "Utkarsh Singhal",
+  // openGraph: {
+  //   title: "Phat Tran | Software Developer",
+  //   description:
+  //     "Software developer specializing in Next.js, TypeScript, and Node.js. Experienced in building scalable, high-performance applications.",
+  //   url: "FILL_LATER", // TODO: Add URL
+  //   type: "website",
+  //   images: [
+  //     {
+  //       url: "https://utkarsh-singhal.is-a.dev/opengraph-image.png",
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "Utkarsh Singhal | Software Developer",
+  //     },
+  //   ],
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  // },
+  // authors: [
+  //   { name: "Utkarsh Singhal", url: "https://utkarsh-singhal.is-a.dev/" },
+  // ],
+  // keywords: [
+  //   "Utkarsh Singhal",
+  //   "Software Developer",
+  //   "Full-Stack Developer",
+  //   "React",
+  //   "Next.js",
+  //   "TypeScript",
+  //   "Node.js",
+  //   "AWS",
+  //   "GCP",
+  //   "MongoDB",
+  //   "Firebase",
+  //   "Tailwind CSS",
+  //   "Web Development",
+  // ],
+  // creator: "Utkarsh Singhal",
+  // publisher: "Utkarsh Singhal",
 };
 
 export default function RootLayout({
@@ -73,9 +71,6 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );

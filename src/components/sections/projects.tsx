@@ -12,7 +12,7 @@ interface IProjectData {
 export function Projects({ data }: { data: Record<string, IProjectData> }) {
   return (
     <div id="projects" className="py-10">
-      <h2 className="font-medium text-primary/90 text-base">projects.</h2>
+      <h2 className="font-medium text-primary/90 text-base">projects 💻.</h2>
 
       <ul className="flex flex-col gap-12 mt-4 font-normal text-primary/90 text-base">
         {Object.entries(data)
@@ -67,15 +67,6 @@ export function Projects({ data }: { data: Record<string, IProjectData> }) {
             </li>
           ))}
       </ul>
-
-      <div className="flex justify-center mt-8">
-        <Link
-          href={"/projects"}
-          className="inline-flex justify-center items-center bg-background hover:bg-accent disabled:opacity-50 shadow-sm px-4 py-2 border border-input rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring h-9 font-medium text-muted-foreground text-sm whitespace-nowrap transition-colors hover:text-accent-foreground cursor-target disabled:pointer-events-none"
-        >
-          View all projects
-        </Link>
-      </div>
     </div>
   );
 }
