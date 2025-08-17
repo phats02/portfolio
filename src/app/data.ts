@@ -24,21 +24,28 @@ export const DATA = {
     AGE: "2002",
     PRONOUN: "he/him",
     HEADLINE:
-      "Passionate about building high-performance and scalable web applications.",
-    RESUME:
-      "https://drive.google.com/file/d/1piWpArbdbjt4PKF4gZlR0nkD09au_8fE/view",
+      "Enthusiastic about creating high-performance, scalable web applications with user-friendly experiences.",
+    // RESUME:
+    //   "https://drive.google.com/file/d/1piWpArbdbjt4PKF4gZlR0nkD09au_8fE/view",
     EMAIL: "mailto:work.phattran.2002@gmail.com",
     GITHUB: "https://github.com/phats02",
     LINKEDIN: "https://www.linkedin.com/in/tq-phat",
   },
-
   ABOUT_ME: {
     INTRO:
-      "Hey! I'm a full-stack developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
+      "As a passionate full-stack developer, I thrive on designing and developing efficient, scalable, and intuitive end-to-end applications that deliver seamless user experiences.",
     EXPERTISE:
-      "My expertise lies in React.js, Next.js, Node.js, TypeScript and Cloud technologies, and I enjoy working across the stack to bring ideas to life.",
+      "With expertise in React.js, Next.js, Node.js, TypeScript, and Cloud technologies, I confidently build and optimize applications while solving complex problems. Committed to staying updated with the latest industry trends, my goal is to continuously enhance my skills and become a highly proficient full-stack web developer.",
   },
-
+  EDUCATION: {
+    "University of Science": {
+      WEBSITE: "https://en.hcmus.edu.vn/overview/",
+      DEGREE: "Degree of Bachelor in Information Technology",
+      LOCATION: "Ho Chi Minh City, Viet Nam",
+      DURATION: "2020 - 2024",
+      GPA: "3.41/4.00",
+    }
+  },
   EXPERIENCE: {
     "DevSamurai Vietnam": {
       WEBSITE: "https://devsamurai.com",

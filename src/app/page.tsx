@@ -4,6 +4,7 @@ import { DATA } from "@/app/data";
 import {
   AboutMe,
   Contact,
+  Education,
   Experience,
   Footer,
   Header,
@@ -33,11 +34,12 @@ export default function Page() {
       <main className="px-4 min-h-lvh">
         <Header data={DATA.HEADER} />
         <AboutMe data={DATA.ABOUT_ME} />
+        <Education data={DATA.EDUCATION} /> 
         <Experience data={DATA.EXPERIENCE} />
-        <Projects data={DATA.PROJECTS} />
         <Skills data={DATA.SKILLS} />
+        <Projects data={DATA.PROJECTS} />
         <Contact data={DATA.HEADER} />
-        <Footer />
+        {/* <Footer /> */}
       </main>
 
       {!checkMobile && <TargetCursor spinDuration={2} hideDefaultCursor />}
