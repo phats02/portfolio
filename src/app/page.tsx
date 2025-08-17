@@ -5,12 +5,10 @@ import {
   AboutMe,
   Contact,
   Education,
-  Experience,
-  Footer,
-  Header,
+  Experience, Header,
   Navbar,
   Projects,
-  Skills,
+  Skills
 } from "@/components/sections";
 import GridPattern from "@/components/ui/grid-pattern";
 import TargetCursor from "@/components/ui/target-cursor";

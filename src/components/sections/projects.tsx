@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 
 interface IProjectData {
   LIVE_PREVIEW?: string;
