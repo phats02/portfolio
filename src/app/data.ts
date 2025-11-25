@@ -53,10 +53,13 @@ export const DATA = {
         "Utilize a NodeJS-based toolkit to develop APIs for Atlassian Connect Add-ons",
         "Handle real-time through SocketIO for a large group of people simultaneously (over 1000 individuals).",
         "Use ReactJS to implement the UI/UX for the plugins.",
+        "Migrating a traditional ExpressJS + React stack to the Atlassian Forge platform."
       ],
       TECH_STACK: [
         "React.js",
         "Express.js",
+        "Spring Boot",
+        "Spring Hibernate",
         "Node.js",
         "TypeScript",
         "Redux toolkit",
@@ -73,6 +76,28 @@ export const DATA = {
   },
 
   PROJECTS: {
+    "Company Project: ROUTEMAP For Jira": {
+      //TODO: Add duration
+      LIVE_PREVIEW: "https://marketplace.atlassian.com/apps/1228080/portfolio-roadmaps-kanban-timeline-structure-for-jira?swcfpc=1&tab=overview&hosting=cloud",
+      DESCRIPTION: [
+        "Developed and maintained Routeapp (Portfolio Roadmaps for Jira), a top-rated Atlassian Marketplace app trusted by thousands of teams worldwide, providing interactive timeline and Kanban roadmaps, cross-project dependency mapping, real-time bidirectional Jira synchronization, milestone tracking, and a fully featured Ideas Portal for feedback collection and prioritization.",
+        "Led the complete platform migration from a traditional ExpressJS + React + PostgreSQL stack on Google App Engine to the Atlassian Forge ecosystem (Forge SQL, Forge Resolvers, TypeScript/JavaScript), achieving native Jira Cloud integration, improved security, and zero-downtime deployment.",
+        "Designed and executed large-scale data migration from PostgreSQL to Forge SQL using read replicas to prevent production overload, successfully transferring all customer data without service interruption.",
+        "Refactored 108 legacy Express.js REST APIs into efficient Forge Resolver functions, optimized the React frontend for Forge UI components, and integrated Forge storage and authentication systems while preserving all core features and performance.",
+      ],
+      TECH_STACK: [
+        "React.js",
+        "Express.js",
+        "Forge SQL",
+        "Forge Resolvers",
+        "TypeScript",
+        "JavaScript",
+        "PostgreSQL",
+        "Google App Engine",
+      ],
+      IMAGE: VIPSImage,
+      HIDDEN: false,
+    },
     "Company Project: AGILEBOX For Jira": {
       //TODO: Add duration
       LIVE_PREVIEW: "https://marketplace.atlassian.com/apps/1224759/agile-planning-poker-retrospectives-daily-standup-for-jira",
@@ -99,6 +124,17 @@ export const DATA = {
         "Google Cloud Schedule",
       ],
       IMAGE: VIPSImage,
+      HIDDEN: false,
+    },
+    "Personal Project: Expense Money Tracker": {
+      LIVE_PREVIEW: "https://github.com/phats02/expense-money-tracker-apis",
+      DESCRIPTION: [
+        "Designed and built a scalable RESTful API in Java 17 + Spring Boot for a personal finance app supporting expense tracking, hierarchical categories, auto-renewing budgets, and AI-powered insights via Google Gemini integration.",
+        "Implemented 20+ OpenAPI-compliant endpoints with JWT authentication, comprehensive Swagger documentation, and advanced JPA/Hibernate mappings (self-referencing categories, budget cycles) on MySQL.",
+        "Delivered production-ready features including natural-language transaction categorization, spending analytics, and real-time recommendations while following agile practices with iterative development and thorough testing using Postman and cURL."
+      ],
+      TECH_STACK: ["Spring Boot", "Spring Hibernate", "PostgreSQL", "JWT", "Swagger"],
+      IMAGE: LibraryImage,
       HIDDEN: false,
     },
     "Team Project: CodeForKids": {
@@ -132,7 +168,7 @@ export const DATA = {
     },
   },
   SKILLS: {
-    Languages: ["JavaScript", "TypeScript", "HTML", "CSS", "Node.js", "Python", "Java"],
+    Languages: ["JavaScript", "TypeScript", "Java","HTML", "CSS", "Node.js", "Python",],
     Frameworks: [
       "React.js",
       "Next.js",
@@ -142,7 +178,8 @@ export const DATA = {
       "Tailwind CSS",
       "VueJS",
       "Webpack",
-      "Spring",
+      "Spring Boot",
+      "Spring Hibernate",
       "FastAPI"
     ],
     Libraries: [
