@@ -26,6 +26,7 @@ export function Projects({ data }: { data: Record<string, IProjectData> }) {
                       <a
                         className="flex items-center gap-1"
                         href={value.LIVE_PREVIEW}
+                        target="_blank"
                       >
                         live preview <ArrowUpRight size={18} />
                       </a>
@@ -34,6 +35,7 @@ export function Projects({ data }: { data: Record<string, IProjectData> }) {
                       <a
                         className="flex items-center gap-1"
                         href={value.GITHUB}
+                        target="_blank"
                       >
                         github <ArrowUpRight size={18} />
                       </a>

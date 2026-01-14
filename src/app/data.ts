@@ -127,18 +127,19 @@ export const DATA = {
       HIDDEN: false,
     },
     "Personal Project: Expense Money Tracker": {
-      LIVE_PREVIEW: "https://github.com/phats02/expense-money-tracker-apis",
+      LIVE_PREVIEW: "https://money-tracker.tq-phat.id.vn/swagger-ui/index.html",
+      GITHUB: "https://github.com/phats02/expense-money-tracker-apis",
       DESCRIPTION: [
         "Designed and built a scalable RESTful API in Java 17 + Spring Boot for a personal finance app supporting expense tracking, hierarchical categories, auto-renewing budgets, and AI-powered insights via Google Gemini integration.",
         "Implemented 20+ OpenAPI-compliant endpoints with JWT authentication, comprehensive Swagger documentation, and advanced JPA/Hibernate mappings (self-referencing categories, budget cycles) on MySQL.",
-        "Delivered production-ready features including natural-language transaction categorization, spending analytics, and real-time recommendations while following agile practices with iterative development and thorough testing using Postman and cURL."
+        "Delivered production-ready features including natural-language transaction categorization, spending analytics, and real-time recommendations while following agile practices with iterative development and thorough testing using Postman and cURL.",
+        "Containerized the Spring Boot application using Docker for consistent, portable builds and deployments; automated the full build → push → deploy process with a GitHub Actions CI/CD pipeline that triggers on code changes, builds the Docker image, and deploys it to Azure App Service (Web App for Containers) for seamless, zero-downtime updates."
       ],
-      TECH_STACK: ["Spring Boot", "Spring Hibernate", "PostgreSQL", "JWT", "Swagger"],
+      TECH_STACK: ["Spring Boot", "Github Actions", "Azure App Service", "Azure Container Registry","Spring Hibernate", "PostgreSQL", "JWT", "Swagger"],
       IMAGE: LibraryImage,
       HIDDEN: false,
     },
     "Team Project: CodeForKids": {
-      // LIVE_PREVIEW: "https://btech.library.vips.edu/",
       DESCRIPTION: [
         "This project is a beginner-focused coding education platform with an intuitive interface and social login integration for effortless user access. It provides concise lessons, interactive coding exercises, and practical projects, enriched with gamified features and progress tracking to create an engaging learning environment. Extensive testing ensures the platform's reliability and performance, offering a dynamic and accessible experience",
         "Built with Next.js, the front-end delivers a responsive and dynamic user interface optimized for seamless interaction. Social login integration via Firebase ensures secure and streamlined authentication. Server-side rendering enhances performance and supports strong SEO, making the platform both fast and discoverable.",
@@ -191,11 +192,14 @@ export const DATA = {
       "JQuery",
     ],
     "DevOps": [
+      "Docker",
       "Google App Engine",
       "Google Cloud Bucket",
       "Google Cloud Task",
       "Google Cloud Schedule",
-      "Amazon Web Services"
+      "Amazon Web Services",
+      "Azure App Service",
+      "Azure Container Registry",
     ],
     "Tools & Platforms": [
       "Git",

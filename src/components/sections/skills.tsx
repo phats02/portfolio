@@ -9,7 +9,7 @@ export function Skills({ data }: { data: Record<string, string[]> }) {
         {Object.entries(data).map(([key, value]) => (
           <li key={key} className="items-end grid sm:grid-cols-[170px_1fr]">
             <p>{key}:</p>
-            <p className="text-muted-foreground text-sm">{value.join(", ")}</p>
+            <p className="text-muted-foreground text-sm">{value.join(", ")}.</p>
           </li>
         ))}
       </ul>
