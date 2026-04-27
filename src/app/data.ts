@@ -9,6 +9,7 @@ export interface IProjectData {
   GITHUB?: string;
   DESCRIPTION: string[];
   NOTE?: string;
+  DURATION?: string;
   TECH_STACK: string[];
   IMAGE: StaticImageData;
   HIDDEN: boolean;
@@ -23,7 +24,7 @@ export const DATA = {
       "Enthusiastic about creating high-performance, scalable web applications with user-friendly experiences.",
     // RESUME:
     //   "https://drive.google.com/file/d/1piWpArbdbjt4PKF4gZlR0nkD09au_8fE/view",
-    EMAIL: "mailto:work.phattran.2002@gmail.com",
+    EMAIL: "mailto:work.phat.2002@gmail.com",
     GITHUB: "https://github.com/phats02",
     LINKEDIN: "https://www.linkedin.com/in/tq-phat",
   },
@@ -76,8 +77,39 @@ export const DATA = {
   },
 
   PROJECTS: {
+    "Team Project: KiteSuccess": {
+      DURATION: "March 2026 - Present",
+      DESCRIPTION: [
+        "Architected and deployed a highly scalable SaaS platform for talent acquisition and employee onboarding. Built as a secure Modular Monolith using Domain-Driven Design (DDD), featuring strict database-level multi-tenancy, granular Role-Based Access Control (RBAC), and a fully automated GitOps deployment pipeline on Kubernetes.",
+        "Designed a comprehensive RBAC system using Spring Security OAuth2, managing granular permissions across organizational roles and enforcing security through React 19 route guards with conditionally rendered UI based on user permissions.",
+        "Built a declarative GitOps CI/CD pipeline using ArgoCD and Kustomize, fully automating deployment of infrastructure and application workloads across staging and production environments.",
+        "Architected cluster High Availability by configuring Horizontal Pod Autoscalers and Pod Disruption Budgets to guarantee zero-downtime during node maintenance.",
+        "Built a dynamic, feature-sliced frontend using React 19 and TanStack Router with secure route guards and permission-based conditional rendering.",
+      ],
+      TECH_STACK: [
+        "Kubernetes",
+        "ArgoCD",
+        "Kustomize",
+        "Docker",
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "Spring Data JPA",
+        "Hibernate",
+        "Flyway",
+        "React",
+        "TypeScript",
+        "Vite",
+        "TanStack Query",
+        "TanStack Router",
+        "Tailwind CSS",
+        "shadcn/ui",
+      ],
+      IMAGE: LibraryImage,
+      HIDDEN: false,
+    },
     "Company Project: ROUTEMAP For Jira": {
-      //TODO: Add duration
+      DURATION: "August 2025 - February 2026",
       LIVE_PREVIEW: "https://marketplace.atlassian.com/apps/1228080/portfolio-roadmaps-kanban-timeline-structure-for-jira?swcfpc=1&tab=overview&hosting=cloud",
       DESCRIPTION: [
         "Developed and maintained Routeapp (Portfolio Roadmaps for Jira), a top-rated Atlassian Marketplace app trusted by thousands of teams worldwide, providing interactive timeline and Kanban roadmaps, cross-project dependency mapping, real-time bidirectional Jira synchronization, milestone tracking, and a fully featured Ideas Portal for feedback collection and prioritization.",
@@ -99,7 +131,7 @@ export const DATA = {
       HIDDEN: false,
     },
     "Company Project: AGILEBOX For Jira": {
-      //TODO: Add duration
+      DURATION: "April 2023 - August 2025",
       LIVE_PREVIEW: "https://marketplace.atlassian.com/apps/1224759/agile-planning-poker-retrospectives-daily-standup-for-jira",
       DESCRIPTION: [
         "Developed a Slack Bot integrated, leveraging Slack OAuth, Jira OAuth, Google Cloud Task, and Google Cloud Scheduler for reminder task scheduling. The bot streamlines workflows with automated reminders for Planning Poker games, Retrospective meetings, and daily standup updates, enabling seamless reporting directly in Slack. With one-click access to meetings and active sessions, it enhances team productivity and collaboration",
@@ -127,6 +159,7 @@ export const DATA = {
       HIDDEN: false,
     },
     "Personal Project: Expense Money Tracker": {
+      DURATION: "September 2025 - Present",
       LIVE_PREVIEW: "https://money-tracker.tq-phat.id.vn/swagger-ui/index.html",
       GITHUB: "https://github.com/phats02/expense-money-tracker-apis",
       DESCRIPTION: [
@@ -140,6 +173,8 @@ export const DATA = {
       HIDDEN: false,
     },
     "Team Project: CodeForKids": {
+      DURATION: "April 2024",
+      GITHUB: "https://github.com/trancuongITUS/mimo-clone-ui",
       DESCRIPTION: [
         "This project is a beginner-focused coding education platform with an intuitive interface and social login integration for effortless user access. It provides concise lessons, interactive coding exercises, and practical projects, enriched with gamified features and progress tracking to create an engaging learning environment. Extensive testing ensures the platform's reliability and performance, offering a dynamic and accessible experience",
         "Built with Next.js, the front-end delivers a responsive and dynamic user interface optimized for seamless interaction. Social login integration via Firebase ensures secure and streamlined authentication. Server-side rendering enhances performance and supports strong SEO, making the platform both fast and discoverable.",
@@ -151,7 +186,9 @@ export const DATA = {
       HIDDEN: false,
     },
     "Personal Project: GradeHub Web service": {
+      DURATION: "January 2024",
       LIVE_PREVIEW: "https://www.youtube.com/watch?v=9iBB_KpHF8I",
+      GITHUB: "https://github.com/phats02/Class-Room-Web-Service",
       DESCRIPTION: [
         "Developed a web application for managing classes, grades, and user roles with real-time notifications and multi-role authentication.",
         "The front-end was developed using React to create a dynamic and responsive user interface, prioritizing seamless user interaction. The UI/UX design emphasized accessibility and an intuitive experience for all users. Social login functionalities for Google and Facebook were integrated, alongside role-based access controls to ensure secure and tailored user experiences.",
@@ -166,6 +203,8 @@ export const DATA = {
         "MongoDB",
         "Firebase",
       ],
+      IMAGE: LibraryImage,
+      HIDDEN: false,
     },
   },
   SKILLS: {
@@ -174,6 +213,7 @@ export const DATA = {
       "React.js",
       "Next.js",
       "Express.js",
+      "NestJS",
       "Redux toolkit",
       "Jest",
       "Tailwind CSS",
@@ -181,7 +221,7 @@ export const DATA = {
       "Webpack",
       "Spring Boot",
       "Spring Hibernate",
-      "FastAPI"
+      "FastAPI",
     ],
     Libraries: [
       "MUI",
@@ -193,6 +233,8 @@ export const DATA = {
     ],
     "DevOps": [
       "Docker",
+      "Kubernetes",
+      "ArgoCD",
       "Google App Engine",
       "Google Cloud Bucket",
       "Google Cloud Task",
